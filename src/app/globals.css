@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: '__nm_r3g';
+    src: url('/fonts/NeueMontreal-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  } 
+  @font-face {
+    font-family: '__nm_m3d';
+    src: url('/fonts/NeueMontreal-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  } 
+
+  :root {
+    --text-regular: '__nm_r3g', sans-serif;
+    --text-medium: '__nm_m3d', sans-serif;
+
+    --text-opacity: 1;
+    --dark: rgb(62 60 63 / var(--text-opacity));
+    --concrete: rgb(95 106 115 / var(--text-opacity));
+    --olive: rgb(131 124 97 / var(--text-opacity));
+    --beige: rgb(244 240 235 / var(--text-opacity));
+  }
+
+  body {
+    background-color: var(--beige);
+    font-family: var(--text-regular);
+  }
+}
+
+@layer utilities {
+
+}
+
+
