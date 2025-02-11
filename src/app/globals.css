@@ -4,6 +4,12 @@
 
 @layer base {
   @font-face {
+    font-family: '__nm_l1te';
+    src: url('/fonts/NeueMontreal-Light.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+  } 
+  @font-face {
     font-family: '__nm_r3g';
     src: url('/fonts/NeueMontreal-Regular.woff2') format('woff2');
     font-weight: 400;
@@ -15,10 +21,18 @@
     font-weight: 500;
     font-style: normal;
   } 
+  @font-face {
+    font-family: '__nm_b0ld';
+    src: url('/fonts/NeueMontreal-Bold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+  } 
 
   :root {
+    --text-light: '__nm_l1te', sans-serif;
     --text-regular: '__nm_r3g', sans-serif;
     --text-medium: '__nm_m3d', sans-serif;
+    --text-bold: '__nm_b0ld', sans-serif;
 
     --text-opacity: 1;
     --dark: rgb(62 60 63 / var(--text-opacity));
