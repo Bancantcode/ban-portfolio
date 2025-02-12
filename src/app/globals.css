@@ -48,7 +48,9 @@
 }
 
 @layer utilities {
-  
+  .grid-style {
+    @apply grid grid-cols-4 gap-x-xs md:grid-cols-9 lg:grid-cols-12 w-full;
+  }
 }
 
 

@@ -42,7 +42,7 @@ const TextReveal: React.FC<TextRevealProps> = ({ text, className }) => {
   return (
     <div ref={containerRef} className={`flex flex-wrap m-0 p-0 ${className}`}>
       {text.split(" ").map((word, index) => (
-        <div key={index} className="overflow-hidden mr-1">
+        <div key={index} className="overflow-hidden mr-1.5">
           <span className={`inline-block word`}>{word}</span>
         </div>
       ))}

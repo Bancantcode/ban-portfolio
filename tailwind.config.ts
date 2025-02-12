@@ -10,7 +10,7 @@ export default {
     extend: {
       fontSize: {
         "base-small": "clamp(0.821rem, 0.3071rem + 0.4647vi, 0.8943rem)",
-        "base": "clamp(0.9rem, 0.9rem + 0.07vw, 1.05rem)",
+        "base": "clamp(1rem, 1rem + 1vw, 1.05rem)",
         "base-large": "clamp(1.1rem, 0.7071rem + 0.5143vi, 1.4rem)",
         'heading-6': 'clamp(1rem, 0.928rem + 0.36vw, 1.25rem)',
         "heading-5": "clamp(1.2rem, 1rem + 0.45vw, 1.57rem)",
