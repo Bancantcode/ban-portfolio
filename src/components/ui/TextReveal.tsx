@@ -9,10 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 interface TextRevealProps {
   text: string;
   className?: string;
-  italicWords?: string[];
 }
 
-const TextReveal: React.FC<TextRevealProps> = ({ text, className, italicWords = [] }) => {
+const TextReveal: React.FC<TextRevealProps> = ({ text, className }) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -41,10 +40,10 @@ const TextReveal: React.FC<TextRevealProps> = ({ text, className, italicWords = 
   }, []);
 
   return (
-    <div ref={containerRef} className={`flex flex-wrap ${className}`}>
+    <div ref={containerRef} className={`flex flex-wrap m-0 p-0 ${className}`}>
       {text.split(" ").map((word, index) => (
-        <div key={index} className="overflow-hidden mr-2">
-          <span className={`inline-block word ${italicWords.includes(word) ? 'font-italic text-olive' : ''}`}>{word}</span>
+        <div key={index} className="overflow-hidden mr-1">
+          <span className={`inline-block word`}>{word}</span>
         </div>
       ))}
     </div>

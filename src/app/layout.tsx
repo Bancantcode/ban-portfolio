@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+// import Footer from "@/components/common/Footer";
 
 export const metadata: Metadata = {
   title: "Bryan Aaron Santiago",
@@ -14,7 +14,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
       <body className="">
         <Navbar />
           {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

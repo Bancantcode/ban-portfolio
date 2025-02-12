@@ -1,5 +1,4 @@
 'use client'
-import Transition from "@/components/ui/Transition";
 
 const Home = () => {
   return (
@@ -9,4 +8,4 @@ const Home = () => {
   );
 }
 
-export default Transition(Home)
+export default Home
