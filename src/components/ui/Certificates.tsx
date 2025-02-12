@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 const Certificates = () => {
   return (
-    <section>
+    <section className='flex'>
         {
             certificates.map((cert) => (
                 <div key={cert.title} className='flex'>
-                    <Image src={cert.src} alt={cert.alt} />
+                    <Image src={cert.src} alt={cert.alt} height={200} width={250}/>
                 </div>
             ))
         }
