@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import Transition from "@/components/ui/Transition"
 
 const AboutPage = () => {
   return (
@@ -6,4 +7,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default Transition(AboutPage)

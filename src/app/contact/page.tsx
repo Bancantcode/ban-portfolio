@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import Transition from "@/components/ui/Transition"
 
 const ContactPage = () => {
   return (
@@ -6,4 +7,4 @@ const ContactPage = () => {
   )
 }
 
-export default ContactPage
+export default Transition(ContactPage)
