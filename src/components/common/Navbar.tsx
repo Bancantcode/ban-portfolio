@@ -1,5 +1,5 @@
-import Button from "../ui/Button"
 import { navLinks } from "@/constants/constants"
+import Button from "../ui/Button"
 import TextReveal from "../ui/TextReveal"
 
 const Navbar = () => {

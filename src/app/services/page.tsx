@@ -1,7 +1,10 @@
+'use client'
+import useLenisScroll from "@/hooks/useLenisScroll"
 import TextHeading from "@/components/ui/TextHeading"
 import Button from "@/components/ui/Button"
 
 const ServicesPage = () => {
+  useLenisScroll();
   return (
     <main>
       <section>

@@ -1,6 +1,7 @@
 import { expertise } from '@/constants/constants';
 import Image from 'next/image';
 
+// not done yet, fix the responsiveness
 const Skills = () => {
   return (
     <div className='flex flex-col lg:gap-2 gap-2 py-8 pt-14'>

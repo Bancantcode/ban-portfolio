@@ -1,6 +1,8 @@
 'use client'
+import useLenisScroll from "@/hooks/useLenisScroll";
 
 const Home = () => {
+  useLenisScroll();
   return (
     <main>
       <div className="h-screen flex justify-center items-center">
@@ -18,8 +20,6 @@ const Home = () => {
       <section className="h-screen flex justify-center items-center">
         <h1>Selected Works</h1>
       </section>
-
-
       
     </main>
   );

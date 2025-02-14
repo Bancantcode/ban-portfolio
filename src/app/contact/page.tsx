@@ -1,6 +1,9 @@
+'use client'
+import useLenisScroll from "@/hooks/useLenisScroll"
 import TextReveal from "@/components/ui/TextReveal"
 
 const ContactPage = () => {
+  useLenisScroll();
   return (
     <main>
       <section className="grid-style">
