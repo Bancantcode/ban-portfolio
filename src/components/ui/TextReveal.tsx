@@ -8,10 +8,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 interface TextRevealProps {
   text: string;
-  className?: string;
+  className: string;
+  marginRight: string;
 }
 
-const TextReveal: React.FC<TextRevealProps> = ({ text, className }) => {
+const TextReveal: React.FC<TextRevealProps> = ({ text, className, marginRight }) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -42,8 +43,8 @@ const TextReveal: React.FC<TextRevealProps> = ({ text, className }) => {
   return (
     <div ref={containerRef} className={`flex flex-wrap m-0 p-0 ${className}`}>
       {text.split(" ").map((word, index) => (
-        <div key={index} className="overflow-hidden mr-1.5">
-          <span className={`inline-block word`}>{word}</span>
+        <div key={index} className="overflow-hidden">
+          <span className={`inline-block word pb-0.5 ${marginRight}`}>{word}</span>
         </div>
       ))}
     </div>

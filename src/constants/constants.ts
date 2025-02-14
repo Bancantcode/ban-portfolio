@@ -23,13 +23,53 @@ export const navLinks = [
     { title: 'Contact,', href: "/contact" },
 ]
 
-export const ProjectInfo = [
+export const projectInfo = [
     { role: '', image: '', name: '', description: '' },
     { role: '', image: '', name: '', description: '' },
     { role: '', image: '', name: '', description: '' },
     { role: '', image: '', name: '', description: '' },
     { role: '', image: '', name: '', description: '' },
 ];
+
+export const socials = [
+    { name: 'BEHANCE', link: 'https://www.behance.net/bancantcodee', svg: '' },
+    { name: 'INSTAGRAM', link: 'https://www.instagram.com/ban.cantcode/', svg: '' },
+    { name: 'LINKEDIN', link: 'https://www.linkedin.com/in/bryanaaronsantiago/', svg: '' },
+    { name: 'GITHUB', link: 'https://github.com/Bancantcode', svg: '' },
+]
+
+export const expertise = [
+    { icon: '', tooltip: 'Hypertext Markup Language' },
+    { icon: '', tooltip: 'Cascading Style Sheets' },
+    { icon: '', tooltip: 'SASS' },
+    { icon: '', tooltip: 'TailwindCSS' },
+    { icon: '', tooltip: 'Bootstrap' },
+    { icon: '', tooltip: 'Javascript' },
+    { icon: '', tooltip: 'ReactJS' },
+    { icon: '', tooltip: 'NextJS' },
+    { icon: '', tooltip: 'VueJS' },
+    { icon: '', tooltip: 'Angular' },
+    { icon: '', tooltip: 'NodeJS' },
+    { icon: '', tooltip: 'ExpressJS' },
+    { icon: '', tooltip: 'Git' },
+    { icon: '', tooltip: 'Github' },
+    { icon: '', tooltip: 'Hypertext Preprocessor' },
+    { icon: '', tooltip: 'Python' },
+    { icon: '', tooltip: 'Java' },
+    { icon: '', tooltip: 'Vite' },
+    { icon: '', tooltip: 'Vercel' },
+    { icon: '', tooltip: 'GSAP' },
+    { icon: '', tooltip: 'Framer Motion' },
+    { icon: '', tooltip: 'Node Package Manager' },
+    { icon: '', tooltip: 'Figma' },
+    { icon: '', tooltip: 'Shadcd/UI' },
+    { icon: '', tooltip: 'DaisyUI' },
+    { icon: '', tooltip: 'jQuery' },
+    { icon: '', tooltip: 'Typescript' },
+    { icon: '', tooltip: 'Prisma' },
+    { icon: '', tooltip: 'MySQL' },
+    { icon: '', tooltip: 'MongoDB' },
+]
 
 export const certificates = [
     { title: 'Geeks For Geeks', src: Certificate1, alt: 'Geeks For Geeks Certificate' },
