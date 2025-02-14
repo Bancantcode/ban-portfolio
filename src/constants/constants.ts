@@ -15,8 +15,37 @@ import Certificate14 from '../../public/images/e-certificates/SoloLearn_Santiago
 import Certificate15 from '../../public/images/e-certificates/SoloLearn_SantiagoBryan_WebDevelopment.webp'
 import Certificate16 from '../../public/images/e-certificates/TheCompleteFullStack_WebDevelopmentBootcamp2024.webp'
 
-import HTML from '../../public/images/logos/html.png'
-import CSS from '../../public/images/logos/css-3.png'
+import HTML from '../../public/images/logos/html.svg'
+import CSS from '../../public/images/logos/css.svg'
+import SASS from '../../public/images/logos/sass.svg'
+import TailwindCSS from '../../public/images/logos/tailwind.svg'
+import Bootstrap from '../../public/images/logos/bootstrap.svg'
+import Javascript from '../../public/images/logos/javascript.svg'
+import React from '../../public/images/logos/react.svg'
+import Next from '../../public/images/logos/next.svg'
+import VueJS from '../../public/images/logos/vue.svg'
+import AngularJS from '../../public/images/logos/angular.svg'
+import NodeJS from '../../public/images/logos/nodejs.svg'
+import ExpressJS from '../../public/images/logos/express.svg'
+import Git from '../../public/images/logos/git.svg'
+import Github from '../../public/images/logos/github.svg'
+import PHP from '../../public/images/logos/php.svg'
+import Python from '../../public/images/logos/python.svg'
+import Java from '../../public/images/logos/java.svg'
+import Vite from '../../public/images/logos/vite.svg'
+import Vercel from '../../public/images/logos/vercel.svg'
+import GSAP from '../../public/images/logos/gsap.svg'
+import FramerMotion from '../../public/images/logos/framer-motion.svg'
+import NPM from '../../public/images/logos/npm.svg'
+import Figma from '../../public/images/logos/figma.svg'
+import Shadcn from '../../public/images/logos/gsap.svg'
+import DaisyUI from '../../public/images/logos/gsap.svg'
+import jQuery from '../../public/images/logos/jquery.svg'
+import Typescript from '../../public/images/logos/typescript.svg'
+import Prisma from '../../public/images/logos/prisma.svg'
+import MySQL from '../../public/images/logos/mysql.svg'
+import MongoDB from '../../public/images/logos/mongodb.svg'
+import Postman from '../../public/images/logos/postman.svg'
 
 export const navLinks = [
     { title: 'Home,', href: "/" },
@@ -44,35 +73,35 @@ export const socials = [
 export const expertise = [
     { icon: HTML, tooltip: 'Hypertext Markup Language' },
     { icon: CSS, tooltip: 'Cascading Style Sheets' },
-    { icon: '', tooltip: 'SASS' },
-    { icon: '', tooltip: 'TailwindCSS' },
-    { icon: '', tooltip: 'Bootstrap' },
-    { icon: '', tooltip: 'Javascript' },
-    { icon: '', tooltip: 'ReactJS' },
-    { icon: '', tooltip: 'NextJS' },
-    { icon: '', tooltip: 'VueJS' },
-    { icon: '', tooltip: 'Angular' },
-    { icon: '', tooltip: 'NodeJS' },
-    { icon: '', tooltip: 'ExpressJS' },
-    { icon: '', tooltip: 'Git' },
-    { icon: '', tooltip: 'Github' },
-    { icon: '', tooltip: 'Hypertext Preprocessor' },
-    { icon: '', tooltip: 'Python' },
-    { icon: '', tooltip: 'Java' },
-    { icon: '', tooltip: 'Vite' },
-    { icon: '', tooltip: 'Vercel' },
-    { icon: '', tooltip: 'GSAP' },
-    { icon: '', tooltip: 'Framer Motion' },
-    { icon: '', tooltip: 'Node Package Manager' },
-    { icon: '', tooltip: 'Figma' },
-    { icon: '', tooltip: 'Shadcd/UI' },
-    { icon: '', tooltip: 'DaisyUI' },
-    { icon: '', tooltip: 'jQuery' },
-    { icon: '', tooltip: 'Typescript' },
-    { icon: '', tooltip: 'Prisma' },
-    { icon: '', tooltip: 'MySQL' },
-    { icon: '', tooltip: 'MongoDB' },
-    { icon: '', tooltip: 'Postman' },
+    { icon: SASS, tooltip: 'SASS' },
+    { icon: TailwindCSS, tooltip: 'TailwindCSS' },
+    { icon: Bootstrap, tooltip: 'Bootstrap' },
+    { icon: Javascript, tooltip: 'Javascript' },
+    { icon: React, tooltip: 'ReactJS' },
+    { icon: Next, tooltip: 'NextJS' },
+    { icon: VueJS, tooltip: 'VueJS' },
+    { icon: AngularJS, tooltip: 'Angular' },
+    { icon: NodeJS, tooltip: 'NodeJS' },
+    { icon: ExpressJS, tooltip: 'ExpressJS' },
+    { icon: Git, tooltip: 'Git' },
+    { icon: Github, tooltip: 'Github' },
+    { icon: PHP, tooltip: 'Hypertext Preprocessor' },
+    { icon: Python, tooltip: 'Python' },
+    { icon: Java, tooltip: 'Java' },
+    { icon: Vite, tooltip: 'Vite' },
+    { icon: Vercel, tooltip: 'Vercel' },
+    { icon: GSAP, tooltip: 'GSAP' },
+    { icon: FramerMotion, tooltip: 'Framer Motion' },
+    { icon: NPM, tooltip: 'Node Package Manager' },
+    { icon: Figma, tooltip: 'Figma' },
+    { icon: Shadcn, tooltip: 'Shadcd/UI' },
+    { icon: DaisyUI, tooltip: 'DaisyUI' },
+    { icon: jQuery, tooltip: 'jQuery' },
+    { icon: Typescript, tooltip: 'Typescript' },
+    { icon: Prisma, tooltip: 'Prisma' },
+    { icon: MySQL, tooltip: 'MySQL' },
+    { icon: MongoDB, tooltip: 'MongoDB' },
+    { icon: Postman, tooltip: 'Postman' },
 ]
 
 export const certificates = [

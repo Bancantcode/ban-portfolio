@@ -1,6 +1,6 @@
 import TextHeading from "@/components/ui/TextHeading"
 import Button from "@/components/ui/Button"
-import Expertise from "@/components/ui/Expertise"
+import Skills from "@/components/ui/Skills"
 import Certificates from "@/components/ui/Certificates"
 
 const AboutPage = () => {
@@ -19,7 +19,7 @@ const AboutPage = () => {
 
       <section>
         <h1>Expertise</h1>
-        <Expertise />
+        <Skills />
       </section>
 
       <section>
