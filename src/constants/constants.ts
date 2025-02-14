@@ -15,6 +15,9 @@ import Certificate14 from '../../public/images/e-certificates/SoloLearn_Santiago
 import Certificate15 from '../../public/images/e-certificates/SoloLearn_SantiagoBryan_WebDevelopment.webp'
 import Certificate16 from '../../public/images/e-certificates/TheCompleteFullStack_WebDevelopmentBootcamp2024.webp'
 
+import HTML from '../../public/images/logos/html.png'
+import CSS from '../../public/images/logos/css-3.png'
+
 export const navLinks = [
     { title: 'Home,', href: "/" },
     { title: 'About,', href: "/about" },
@@ -39,8 +42,8 @@ export const socials = [
 ]
 
 export const expertise = [
-    { icon: '', tooltip: 'Hypertext Markup Language' },
-    { icon: '', tooltip: 'Cascading Style Sheets' },
+    { icon: HTML, tooltip: 'Hypertext Markup Language' },
+    { icon: CSS, tooltip: 'Cascading Style Sheets' },
     { icon: '', tooltip: 'SASS' },
     { icon: '', tooltip: 'TailwindCSS' },
     { icon: '', tooltip: 'Bootstrap' },
@@ -69,6 +72,7 @@ export const expertise = [
     { icon: '', tooltip: 'Prisma' },
     { icon: '', tooltip: 'MySQL' },
     { icon: '', tooltip: 'MongoDB' },
+    { icon: '', tooltip: 'Postman' },
 ]
 
 export const certificates = [

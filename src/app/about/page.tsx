@@ -1,5 +1,7 @@
 import TextHeading from "@/components/ui/TextHeading"
 import Button from "@/components/ui/Button"
+import Expertise from "@/components/ui/Expertise"
+import Certificates from "@/components/ui/Certificates"
 
 const AboutPage = () => {
   return (
@@ -13,8 +15,22 @@ const AboutPage = () => {
           <a href="/contact"><Button id="nav-btn" title="Contact" containerClass="" /></a>
           <a href="/services"><Button id="nav-btn" title="Services" containerClass="" /></a>
         </div>
-        
       </section>
+
+      <section>
+        <h1>Expertise</h1>
+        <Expertise />
+      </section>
+
+      <section>
+        <h1>My Certifications</h1>
+        <Certificates />
+        <a href="https://drive.google.com/drive/folders/1Hq6q05aRXy430aGIQlxTZ8GJ6zbwJdeb?usp=sharing" target="_blank">
+          <Button id="nav-btn" title={`View Certificates`} containerClass="" />
+        </a>
+      </section>
+
+
     </main>
   )
 }
