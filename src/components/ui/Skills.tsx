@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 const Skills = () => {
   return (
-    <div className='flex flex-col lg:gap-6 gap-4 py-8 pt-14'>
-      <div className='flex justify-center flex-wrap xl:px-[27rem] lg:px-80 md:px-60 px-4 items-center gap-2.5 lg:gap-4 my-4 z-10' id='scroll-animation-27'>
+    <div className='flex flex-col lg:gap-2 gap-2 py-8 pt-14'>
+      <div className='flex justify-center flex-wrap xl:px-[27rem] lg:px-80 md:px-60 px-4 items-center gap-2.5 lg:gap-2 my-2 z-10' id='scroll-animation-27'>
         {expertise.map((exp, index) => (
           <div className="relative flex items-center" key={index}>
             <div className="group relative flex items-center">

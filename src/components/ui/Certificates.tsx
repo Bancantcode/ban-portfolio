@@ -3,10 +3,10 @@ import Image from 'next/image'
 
 const Certificates = () => {
   return (
-    <div className='flex flex-wrap justify-center'>
+    <div className='flex'>
         {
             certificates.map((cert) => (
-                <Image key={cert.title} src={cert.src} alt={cert.alt} height={200} width={250}/>
+                <Image key={cert.title} src={cert.src} alt={cert.alt} height={80} width={120} />
             ))
         }
         

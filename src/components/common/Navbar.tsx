@@ -5,7 +5,7 @@ import TextReveal from "../ui/TextReveal"
 const Navbar = () => {
   return (
     <header className="flex justify-between">
-      <TextReveal text="Quick links" />
+      <TextReveal text="Quick links" className="" marginRight=""/>
       <div className="flex gap-1">
         {
           navLinks.map(link => (
