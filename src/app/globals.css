@@ -35,16 +35,36 @@
     --text-bold: '__nm_b0ld', sans-serif;
 
     --text-opacity: 1;
-    --dark: rgb(62 60 63 / var(--text-opacity));
-    --concrete: rgb(95 106 115 / var(--text-opacity));
-    --olive: rgb(131 124 97 / var(--text-opacity));
-    --beige: rgb(244 240 235 / var(--text-opacity));
+    --dark: rgb(21 19 28 / var(--text-opacity)); 
+    --semi-dark: rgb(28 24 45 / var(--text-opacity)); 
+    --violet: rgb(64 49 122 / var(--text-opacity));
+    --light-violet: rgb(193 177 255 / var(--text-opacity));
+    --bluish: rgb(79 70 229 / var(--text-opacity));
+    --white: rgb(243 243 241 / var(--text-opacity));
+
+    /* dark — #15131C */
+    /* semi-dark — #1C182D */
+    /* violet — #40317A */
+    /* light-violet — #C1B1FF */
+    /* bluish — #4F46E5 */
   }
 
   body {
-    background-color: var(--beige);
+    background-color: var(--dark);
     font-family: var(--text-regular);
+    color: var(--white);
   }
+  body::-webkit-scrollbar {
+    @apply w-[9px];
+  }
+  body::-webkit-scrollbar-track {
+    @apply bg-transparent rounded-[5px];
+  }
+  body::-webkit-scrollbar-thumb {
+    @apply bg-transparent rounded-[5px] border-[#342e3f] border-solid border;
+  }
+
+
 }
 
 @layer utilities {

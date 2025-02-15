@@ -32,15 +32,18 @@ export default {
         "3xl": "clamp(5.75rem, 6.2571rem + 1.2023vi, 7.25rem)",
       },
       colors: {
-        dark: "var(--dark)",
-        concrete: "var(--concrete)",
-        olive: "var(--olive)",
-        beige: "var(--beige)",
+        "dark": "var(--dark)",
+        "semi-dark": "var(--semi-dark)",
+        "violet": "var(--violet)",
+        "light-violet": "var(--light-violet)",
+        "bluish": "var(--bluish)",
+        "white": "var(--white)",
       },
       fontFamily: {
+        light: "var(--text-light)",
         regular: "var(--text-regular)",
         medium: "var(--text-medium)",
-        // italic: "var(--text-italic)"
+        bold: "var(--text-bold)",
       },
     },
   },
