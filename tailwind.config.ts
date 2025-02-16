@@ -17,7 +17,7 @@ export default {
         "heading-4": "clamp(1.4rem, 0.9rem + 0.5vw, 1.5rem)",
         "heading-3": "clamp(1.5625rem, 1.2474rem + 1.5755vi, 2.6653rem)",
         "heading-2": "clamp(3rem, 1.496rem + 2.2854vi, 3.5529rem)",
-        "heading-1": "clamp(4.688rem, 2.25rem + 1vw, 4.6875rem)",
+        "heading-1": "clamp(3rem, 2.25rem + 1vw, 4.2rem)",
         "heading-display": "clamp(2.6518rem, 1.88rem + 3.459vi, 7.3131rem)",
       },
       spacing: {

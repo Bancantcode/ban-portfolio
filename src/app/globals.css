@@ -47,6 +47,16 @@
     /* violet — #40317A */
     /* light-violet — #C1B1FF */
     /* bluish — #4F46E5 */
+
+    --space-3xs: clamp(0.3125rem, 0.3125rem + 0vi, 0.3125rem);
+    --space-2xs: clamp(0.5625rem, 0.5446rem + 0.0893vi, 0.625rem);
+    --space-xs: clamp(0.875rem, 0.8571rem + 0.0893vi, 0.9375rem);
+    --space-sm: clamp(1.125rem, 1.0893rem + 0.1786vi, 1.25rem);
+    --space-md: clamp(1.6875rem, 1.6339rem + 0.2679vi, 1.875rem);
+    --space-lg: clamp(2.25rem, 2.1786rem + 0.3571vi, 2.5rem);
+    --space-xl: clamp(3.375rem, 3.2679rem + 0.5357vi, 3.75rem);
+    --space-2xl: clamp(4.5rem, 4.3571rem + 0.7143vi, 5rem);
+    --space-3xl: clamp(5.75rem, 6.2571rem + 1.2023vi, 7.25rem);
   }
 
   body {
@@ -63,13 +73,14 @@
   body::-webkit-scrollbar-thumb {
     @apply bg-transparent rounded-[5px] border-[#342e3f] border-solid border;
   }
-
-
 }
 
 @layer utilities {
   .grid-style {
     @apply grid grid-cols-4 gap-x-xs md:grid-cols-9 lg:grid-cols-12 w-full;
+  }
+  .section-x-padding {
+    @apply px-[var(--space-xs)] md:px-[var(--space-md)];
   }
 }
 
