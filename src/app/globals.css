@@ -90,6 +90,9 @@
   .heading {
     @apply text-heading-3 lg:text-heading-2 xl:text-heading-1;
   }
+  .text-style {
+    @apply text-base-small opacity-60;
+  }
 }
 
 
