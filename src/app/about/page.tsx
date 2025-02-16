@@ -1,4 +1,3 @@
-'use client'
 import useLenisScroll from "@/hooks/useLenisScroll"
 import TextHeading from "@/components/ui/TextHeading"
 import Button from "@/components/ui/Button"
@@ -7,6 +6,7 @@ import Certificates from "@/components/ui/Certificates"
 
 const AboutPage = () => {
   useLenisScroll();
+
   return (
     <main>
       <section>
