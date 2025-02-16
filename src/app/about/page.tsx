@@ -1,12 +1,12 @@
-'use client'
+// 'use client'
 import TextHeading from "@/components/ui/TextHeading"
 import Button from "@/components/ui/Button"
 import Skills from "@/components/ui/Skills"
 import Certificates from "@/components/ui/Certificates"
-import useLenisScroll from "@/hooks/useLenisScroll"
+// import useLenisScroll from "@/hooks/useLenisScroll"
 
 const AboutPage = () => {
-  useLenisScroll();
+  // useLenisScroll();
   return (
     <main>
       <section>
