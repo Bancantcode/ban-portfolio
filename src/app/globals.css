@@ -73,6 +73,11 @@
   body::-webkit-scrollbar-thumb {
     @apply bg-transparent rounded-[5px] border-[#342e3f] border-solid border;
   }
+
+  img {
+    width: auto;
+    height: auto;
+  }
 }
 
 @layer utilities {
@@ -81,6 +86,9 @@
   }
   .section-x-padding {
     @apply px-[var(--space-xs)] md:px-[var(--space-md)];
+  }
+  .heading {
+    @apply text-heading-3 lg:text-heading-2 xl:text-heading-1;
   }
 }
 
