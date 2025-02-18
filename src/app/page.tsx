@@ -22,6 +22,20 @@ const Home = () => {
         <HomeSelectedWork />
         <h1>Selected Works</h1>
       </section>
+
+      <section className="h-screen flex justify-center items-center">
+        <h1>About Call to action</h1>
+      </section>
+
+      <section className="h-screen flex justify-center items-center">
+        <h1>Testimonials</h1>
+      </section>
+
+      <section className="h-screen flex justify-center items-center">
+        <h1>Contact Call to action</h1>
+      </section>
+
+      
       
     </main>
   );

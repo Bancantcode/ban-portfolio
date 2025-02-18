@@ -28,7 +28,7 @@ const AboutPage = () => {
       <section>
         <h1>My Certifications</h1>
         <Certificates />
-        <a href="https://drive.google.com/drive/folders/1Hq6q05aRXy430aGIQlxTZ8GJ6zbwJdeb?usp=sharing" target="_blank">
+        <a href="#" target="_blank">
           <Button id="nav-btn" title={`View Certificates`} containerClass="" />
         </a>
       </section>

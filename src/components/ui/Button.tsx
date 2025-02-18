@@ -2,7 +2,7 @@ import clsx from "clsx";
 import TextReveal from "./TextReveal";
 
 interface ButtonProps {
-  id: string;
+  id: string 
   title: string;
   containerClass: string;
 }

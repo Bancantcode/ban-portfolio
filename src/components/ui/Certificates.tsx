@@ -9,7 +9,6 @@ const Certificates = () => {
                 <Image key={cert.title} src={cert.src} alt={cert.alt} height={80} width={120} />
             ))
         }
-        
     </div>
   )
 }
