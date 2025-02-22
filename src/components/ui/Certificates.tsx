@@ -16,21 +16,20 @@ const Certificates = () => {
       <Image src={Fade} alt="Fade Effect" className='w-full h-full object-cover absolute inset-0 z-10' />
       <Image src={Glow6} alt="Glow Elipse" className='absolute -z-10 w-[50rem] h-auto' />
 
-      <div className='space-y-4' id=''>
-        <h1 className='uppercase text-white font-black text-[2rem] lg:text-[5rem] whitespace-nowrap leading-none text-center'>
+      <div className='flex flex-col items-center' id=''>
+        <h1 className='uppercase font-bold heading'>
           <TextReveal text={certificate.title} className="heading leading-none col-start-1 col-span-12 mb-xl" marginRight="mr-2" />
         </h1>
-        <TextReveal text={certificate.title} className="heading leading-none col-start-1 col-span-12 mb-xl" marginRight="mr-2" />
-        <p className='text-white text-center px-[2rem]' dangerouslySetInnerHTML={{ __html: certificate.content }}></p>
+        <TextReveal text={certificate.content} className="text-style md:text-base w-1/2" marginRight="mr-1" />
       </div>
 
       <div className='md:space-y-4 space-y-2 overflow-hidden'>
-        <div className='aboslute ml-[-10rem] flex md:gap-4 gap-2 md:h-[10rem] h-[4rem] z-0' id='scroll-animation-22'>
+        <div className='ml-[-11rem] flex md:gap-4 gap-2 md:h-[10rem] h-[4rem] z-0' id='leftmove__animation'>
           {certificate.upper_certificates.map((cert, index) => (
             <Image key={index} src={cert.src} alt={`Certification ${index + 1}`} className='h-full w-auto rounded-md border-1 border-white' />
           ))}
         </div>
-        <div className='aboslute flex md:gap-4 gap-2 md:h-[10rem] h-[4rem] z-0' id='scroll-animation-23'>
+        <div className='flex md:gap-4 gap-2 md:h-[10rem] h-[4rem] z-0' id='rightmove__animation'>
           {certificate.lower_certificates.map((cert, index) => (
             <Image key={index} src={cert.src} alt={`Certification ${index + 1}`} className='h-full w-auto rounded-md border-1 border-white' />
           ))}

@@ -8,14 +8,14 @@ gsap.registerPlugin(ScrollTrigger);
 const useGsapAnimations = () => {
   useEffect(() => {
     //check if the screen width is greater than 768px (considered as mobile size)
-    const isMobile = window.innerWidth <= 768;
+    // const isMobile = window.innerWidth <= 768;
 
-    if (isMobile) {
-      //if on mobile, kill all ScrollTrigger instances and GSAP animations
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-      gsap.globalTimeline.clear();
-      return;
-    }
+    // if (isMobile) {
+    //   //if on mobile, kill all ScrollTrigger instances and GSAP animations
+    //   ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    //   gsap.globalTimeline.clear();
+    //   return;
+    // }
 
     //GSAP ANIMATIONS
     gsap.fromTo('#scroll-effect', { y: "100%" },
@@ -83,10 +83,13 @@ const useGsapAnimations = () => {
       }
     );
 
+
+
+
     // CERTIFICATIONS
-    gsap.to('#scroll-animation-22', {
+    gsap.to('#leftmove__animation', {
       scrollTrigger: {
-        trigger: '#scroll-animation-22',
+        trigger: '#leftmove__animation',
         toggleActions: 'restart pause reverse pause',
         scrub: 1,
         markers: false,
@@ -97,10 +100,10 @@ const useGsapAnimations = () => {
       ease: 'none',
       duration: 3,
     });
-    // Certification Container 2
-    gsap.to('#scroll-animation-23', {
+
+    gsap.to('#rightmove__animation', {
       scrollTrigger: {
-        trigger: '#scroll-animation-23',
+        trigger: '#rightmove__animation',
         toggleActions: 'restart pause reverse pause',
         scrub: 1,
         markers: false,
@@ -111,23 +114,7 @@ const useGsapAnimations = () => {
       ease: 'none',
       duration: 3,
     });
-    // 'CERTIFICATIONS' Title and Content
-    gsap.fromTo('#scroll-animation-24',
-      { opacity: 0 }, // from
-      {
-        opacity: 4,
-        scrollTrigger: {
-          trigger: '#scroll-animation-24',
-          toggleActions: 'restart pause reverse pause',
-          scrub: 1,
-          markers: false,
-          start: 'top 70%',
-          end: 'top 20%',
-        },
-        ease: 'none',
-        duration: 3,
-      }
-    );
+    
     
 
     

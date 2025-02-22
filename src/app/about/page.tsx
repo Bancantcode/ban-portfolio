@@ -32,6 +32,16 @@ const AboutPage = () => {
         </a> */}
       </section>
 
+      <section>
+        <h1>Expertise</h1>
+        <Skills />
+      </section>
+
+      <section>
+        <h1>Expertise</h1>
+        <Skills />
+      </section>
+
 
     </main>
   )
