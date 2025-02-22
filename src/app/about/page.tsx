@@ -26,11 +26,10 @@ const AboutPage = () => {
       </section>
 
       <section>
-        <h1>My Certifications</h1>
         <Certificates />
-        <a href="#" target="_blank">
+        {/* <a href="#" target="_blank">
           <Button id="nav-btn" title={`View Certificates`} containerClass="" />
-        </a>
+        </a> */}
       </section>
 
 
