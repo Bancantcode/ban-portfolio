@@ -12,6 +12,18 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
   return (
     <html lang="en">
       <body className="">
+        <svg className="pointer-events-none absolute cursor-none">
+          <filter id="grainy">
+            <feTurbulence 
+              type="turbulence" 
+              baseFrequency="0.5" 
+              // numOctaves="6" 
+              // stitchTiles="stitch"
+            >
+            </feTurbulence>
+            <feColorMatrix type="saturate" values="0"></feColorMatrix>
+          </filter>
+        </svg>
         <Navbar />
           {children}
         {/* <Footer /> */}

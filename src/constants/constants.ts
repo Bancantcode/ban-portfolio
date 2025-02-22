@@ -1,4 +1,4 @@
-import Certificate1 from '../../public/images/e-certificates/GeeksForGeeks_SantiagoBryan_FullStackDevelopment.webp'
+import Certificate1 from '../../public/images/e-certificates/FullstackDevBootcamp-GeeksForGeeks.webp'
 import Certificate2 from '../../public/images/e-certificates/GetStartedWithFigma.webp'
 import Certificate3 from '../../public/images/e-certificates/GreatLearning_SantiagoBryan_IntroToJavascript.webp'
 import Certificate4 from '../../public/images/e-certificates/GreatLearning_SantiagoBryan_UI-UX.webp'
