@@ -2,7 +2,7 @@
 import useGsapAnimations from '@/hooks/useGsapAnimations'
 import { certificates } from '@/constants/constants'
 import Image from 'next/image'
-import Fade from '../../../public/images/glow/Fade.webp'
+// import Fade from '../../../public/images/glow/Fade.webp'
 import Glow6 from '../../../public/images/glow/Glow6.webp'
 import Button1 from './Button1'
 import TextReveal from './TextReveal'
@@ -13,14 +13,14 @@ const Certificates = () => {
 
   return (
     <div className='flex flex-col md:gap-12 gap-8 items-center py-12 justify-center relative overflow-hidden'>
-      <Image src={Fade} alt="Fade Effect" className='w-full h-full object-cover absolute inset-0 z-10' />
+      {/* <Image src={Fade} alt="Fade Effect" className='w-full h-full object-cover absolute inset-0 z-10' /> */}
       <Image src={Glow6} alt="Glow Elipse" className='absolute -z-10 w-[50rem] h-auto' />
 
-      <div className='flex flex-col items-center' id=''>
-        <h1 className='uppercase font-bold heading'>
-          <TextReveal text={certificate.title} className="heading leading-none col-start-1 col-span-12 mb-xl" marginRight="mr-2" />
+      <div className='flex flex-col items-center section-x-padding'>
+        <h1 className='uppercase'>
+          <TextReveal text={certificate.title} className="heading font-bold" marginRight="mr-0" />
         </h1>
-        <TextReveal text={certificate.content} className="text-style md:text-base w-1/2" marginRight="mr-1" />
+        <TextReveal text={certificate.content} className="flex items-center justify-center text-style md:w-2/3 md:text-base text-center" marginRight="mr-1" />
       </div>
 
       <div className='md:space-y-4 space-y-2 overflow-hidden'>
