@@ -1,4 +1,3 @@
-
 interface Button1Props {
   text: string;
   styles?: string;
