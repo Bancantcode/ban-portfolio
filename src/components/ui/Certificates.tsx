@@ -32,7 +32,7 @@ const Certificates = () => {
         </div>
       </div>
 
-      <a href={certificate.link} target='_blank'>
+      <a href={certificate.link} target='_blank' className=''>
         <Button id="nav-btn" title={certificate.buttonText} containerClass="" />
       </a>
     </div>

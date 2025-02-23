@@ -135,6 +135,4 @@ export const certificates = [
             { title: 'SoloLearn Intro to Javascript', src: Certificate13, alt: 'SoloLearn Intro to Javascript Certificate' },
         ]
     },
-
-
 ]
