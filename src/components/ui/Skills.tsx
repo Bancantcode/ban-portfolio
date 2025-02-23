@@ -1,11 +1,13 @@
 import { expertise } from '@/constants/constants';
 import Image from 'next/image';
+import TextReveal from './TextReveal';
 
-// not done yet, fix the responsiveness
 const Skills = () => {
   return (
-    <div className='flex flex-col lg:gap-2 gap-2 py-8 pt-14'>
-      <div className='flex justify-center flex-wrap xl:px-[27rem] lg:px-80 md:px-60 px-4 items-center gap-2.5 lg:gap-2 my-2 z-10' id='scroll-animation-27'>
+    <div className='flex flex-col justify-center items-center w-full gap-3xs'>
+      <TextReveal text="Expertise" className="heading leading-none uppercase font-medium mb-xs" marginRight="mr-0" />
+
+      <div className='flex flex-wrap justify-center gap-2 z-10 md:w-4/5 xl:w-3/5'>
         {expertise.map((exp, index) => (
           <div className="relative flex items-center" key={index}>
             <div className="group relative flex items-center">
