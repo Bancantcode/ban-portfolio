@@ -22,12 +22,12 @@ const Certificates = () => {
       <div className='md:space-y-4 space-y-2 overflow-hidden'>
         <div className='ml-[-11rem] flex md:gap-xs gap-2xs md:h-[10rem] h-[4rem] z-0' id='leftmove__animation'>
           {certificate.upper_certificates.map((cert, index) => (
-            <Image key={index} src={cert.src} alt={`Certification ${index + 1}`} className='h-full w-auto rounded-md border-1 border-white' />
+            <Image key={index} src={cert.src} alt={`Certification ${index + 1}`} className='h-full w-auto rounded-md border-1 border-white' loading="lazy" />
           ))}
         </div>
         <div className='flex md:gap-xs gap-2xs md:h-[10rem] h-[4rem] z-0' id='rightmove__animation'>
           {certificate.lower_certificates.map((cert, index) => (
-            <Image key={index} src={cert.src} alt={`Certification ${index + 1}`} className='h-full w-auto rounded-md border-1 border-white' />
+            <Image key={index} src={cert.src} alt={`Certification ${index + 1}`} className='h-full w-auto rounded-md border-1 border-white' loading="lazy" />
           ))}
         </div>
       </div>
