@@ -120,6 +120,7 @@ export const certificates = [
         upper_certificates: [
             { title: 'Geeks For Geeks', src: Certificate1, alt: 'Geeks For Geeks Certificate' },
             { title: 'Intro To Javascript', src: Certificate3, alt: 'Intro To Javascript Certificate' },
+            { title: 'SoloLearn Web Development', src: Certificate15, alt: 'SoloLearn Web Development Certificate' },
             { title: 'Hubspot SEO 1', src: Certificate5, alt: 'Hubspot SEO 1 Certificate' },
             { title: 'SoloLearn Intro to Javascript', src: Certificate13, alt: 'SoloLearn Intro to Javascript Certificate' },
             { title: 'UI/UX Design', src: Certificate4, alt: 'UI/UX Design Certificate' },
@@ -127,6 +128,7 @@ export const certificates = [
             { title: 'Legacy Javascript Algorithms and Data Structure', src: Certificate8, alt: 'Legacy Javascript Algorithms and Data Structure Certificate' },
             { title: 'Get Started With Figma', src: Certificate2, alt: 'Get Started With Figma Certificate' },
             { title: 'Intro to Web Design Principle', src: Certificate7, alt: 'Intro to Web Design Principle Certificate' },
+            { title: 'The Complete Full Stack Web Development 2024', src: Certificate16, alt: 'The Complete Full Stack Web Development 2024 Certificate' },
             { title: 'SoloLearn Intro to CSS', src: Certificate12, alt: 'SoloLearn Intro to CSS Certificate' },
         ],
         lower_certificates: [
@@ -135,11 +137,12 @@ export const certificates = [
             { title: 'SEO Rank & Rise', src: Certificate10, alt: 'SEO Rank & Rise Certificate' },
             { title: 'UI/UX Design', src: Certificate4, alt: 'UI/UX Design Certificate' },
             { title: 'SoloLearn Intro to HTML', src: Certificate11, alt: 'SoloLearn Intro to HTML Certificate' },
-            { title: 'SoloLearn Web Development', src: Certificate15, alt: 'SoloLearn Web Development Certificate' },
             { title: 'The Complete Full Stack Web Development 2024', src: Certificate16, alt: 'The Complete Full Stack Web Development 2024 Certificate' },
             { title: 'SoloLearn Intro to CSS', src: Certificate12, alt: 'SoloLearn Intro to CSS Certificate' },
             { title: 'Hubspot SEO 1', src: Certificate5, alt: 'Hubspot SEO 1 Certificate' },
             { title: 'SoloLearn Intro to Javascript', src: Certificate13, alt: 'SoloLearn Intro to Javascript Certificate' },
+            { title: 'Legacy Javascript Algorithms and Data Structure', src: Certificate8, alt: 'Legacy Javascript Algorithms and Data Structure Certificate' },
+            { title: 'SoloLearn Web Development', src: Certificate15, alt: 'SoloLearn Web Development Certificate' },
         ]
     },
 ]

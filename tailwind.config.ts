@@ -29,7 +29,7 @@ export default {
         "lg": "clamp(2.25rem, 2.1786rem + 0.3571vi, 2.5rem)",
         "xl": "clamp(3.375rem, 3.2679rem + 0.5357vi, 3.75rem)",
         "2xl": "clamp(4.5rem, 4.3571rem + 0.7143vi, 5rem)",
-        "3xl": "clamp(5.75rem, 6.2571rem + 1.2023vi, 7.25rem)",
+        "3xl": "clamp(4.75rem, 5.2571rem + 1.2023vi, 5.25rem)",
       },
       colors: {
         "dark": "var(--dark)",
