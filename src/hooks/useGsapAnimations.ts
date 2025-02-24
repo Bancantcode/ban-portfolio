@@ -83,9 +83,6 @@ const useGsapAnimations = () => {
       }
     );
 
-
-
-
     // CERTIFICATIONS
     gsap.to('#leftmove__animation', {
       scrollTrigger: {
@@ -114,6 +111,8 @@ const useGsapAnimations = () => {
       ease: 'none',
       duration: 3,
     });
+
+    
     
     
 

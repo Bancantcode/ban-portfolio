@@ -65,7 +65,7 @@
     color: var(--white);
   }
 
-  body::before, body::after {
+  /* body::before, body::after {
     position: fixed;
     left: 0;
     top: 0;
@@ -79,7 +79,7 @@
   
   body::before {
     filter: url(#grainy);
-  }
+  } */
 
   body::-webkit-scrollbar {
     @apply w-[9px];
@@ -105,11 +105,12 @@
     @apply px-[var(--space-xs)] md:px-[var(--space-md)];
   }
   .heading {
-    @apply text-heading-3 md:text-heading-1;
+    @apply text-heading-2 md:text-heading-1;
   }
   .text-style {
     @apply text-base-small opacity-60 md:text-base leading-tight;
   }
 }
+
 
 

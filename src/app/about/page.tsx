@@ -1,6 +1,7 @@
 'use client'
 import TextHeading from "@/components/ui/TextHeading"
 import Stats from "@/components/ui/Stats"
+import WhoAmI from "@/components/ui/WhoAmI"
 import Skills from "@/components/ui/Skills"
 import Certificates from "@/components/ui/Certificates"
 import useLenisScroll from "@/hooks/useLenisScroll"
@@ -19,6 +20,10 @@ const AboutPage = () => {
       </section>
 
       <section>
+        <WhoAmI />
+      </section>
+
+      <section>
         <Skills />
       </section>
 
@@ -26,15 +31,6 @@ const AboutPage = () => {
         <Certificates />
       </section>
 
-      <section>
-        <h1>Expertise</h1>
-        <Skills />
-      </section>
-
-      <section>
-        <h1>Expertise</h1>
-        <Skills />
-      </section>
 
 
     </main>
