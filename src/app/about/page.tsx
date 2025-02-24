@@ -1,11 +1,12 @@
-// 'use client'
+'use client'
 import TextHeading from "@/components/ui/TextHeading"
+import Stats from "@/components/ui/Stats"
 import Skills from "@/components/ui/Skills"
 import Certificates from "@/components/ui/Certificates"
-// import useLenisScroll from "@/hooks/useLenisScroll"
+import useLenisScroll from "@/hooks/useLenisScroll"
 
 const AboutPage = () => {
-  // useLenisScroll();
+  useLenisScroll();
   return (
     <main>
       <section>
@@ -14,6 +15,7 @@ const AboutPage = () => {
           description={`I have been passionate about design since I was in school, and I currently specialize in creating custom websites that I genuinely love. I have a strong desire to push the limits of creativity and honor excellence in the field of digital design. My focus is on providing specialized digital solutions, fusing creativity with artistic vision to bring my clients' vision to life. I'm supposed to go above and beyond expectations with every endeavor and make a lasting impact.`} 
           className="pb-xl md:pb-3xl"
         />
+        <Stats />
       </section>
 
       <section>

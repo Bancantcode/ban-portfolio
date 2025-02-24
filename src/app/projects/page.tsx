@@ -1,10 +1,10 @@
-// 'use client'
-// import useLenisScroll from "@/hooks/useLenisScroll"
+'use client'
+import useLenisScroll from "@/hooks/useLenisScroll"
 import TextHeading from "@/components/ui/TextHeading"
 import Button from "@/components/ui/Button"
 
 const ProjectPage = () => {
-  // useLenisScroll();
+  useLenisScroll();
   return (
     <main>
       <section>
