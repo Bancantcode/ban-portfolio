@@ -38,6 +38,7 @@
     --dark: rgb(21 19 28 / var(--text-opacity)); /* dark — #15131C */
     --semi-dark: rgb(28 24 45 / var(--text-opacity)); /* semi-dark — #1C182D */
     --violet: rgb(64 49 122 / var(--text-opacity)); /* violet — #40317A */
+    --dark-violet: rgb(46 41 69 / var(--text-opacity)); /* dark-violet — #2E2945 */
     --light-violet: rgb(193 177 255 / var(--text-opacity)); /* light-violet — #C1B1FF */
     --bluish: rgb(79 70 229 / var(--text-opacity)); /* bluish — #4F46E5 */
     --white: rgb(243 243 241 / var(--text-opacity)); /* bluish — #F3F3F1 */
@@ -103,6 +104,10 @@
   }
   .text-style {
     @apply text-base-small opacity-60 md:text-base leading-tight;
+  }
+  
+  .gradient {
+    background-image: linear-gradient(-125deg, #d6a3e400, var(--dark-violet));
   }
 }
 

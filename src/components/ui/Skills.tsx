@@ -2,6 +2,7 @@ import { expertise } from '@/constants/constants';
 import Image from 'next/image';
 import TextReveal from './TextReveal';
 import Grid1 from '../../../public/images/glow/Grid2.webp'
+import StatsAPI from './StatsAPI';
 
 const Skills = () => {
   return (
@@ -23,6 +24,8 @@ const Skills = () => {
           </div>
         ))}
       </div>
+
+      <StatsAPI />
     </div>
   )
 }

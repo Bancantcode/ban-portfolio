@@ -2,9 +2,9 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { moreAboutMe } from "@/constants/constants";
 import useGsapAnimations from "@/hooks/useGsapAnimations";
 import TextReveal from "./TextReveal";
-import { moreAboutMe } from "@/constants/constants";
 import Glow3 from '../../../public/images/glow/Glow3.webp'
 import Grid1 from '../../../public/images/glow/Grid2.webp'
 
@@ -42,7 +42,7 @@ const WhoAmI = () => {
             {
                 moreAboutMe.map((me, index) => (
                     <div key={index} className="grid grid-cols-4 md:grid-cols-10 xl:grid-cols-12 gap-x-xs mb-lg">
-                        <div className="mb-md h-0.5 bg-violet w-full col-span-4 md:col-span-10 xl:col-span-12" ref={(el) => { linesRef.current[index] = el }}></div>
+                        <div className="mb-md h-0.5 gradient w-full col-span-4 md:col-span-10 xl:col-span-12" ref={(el) => { linesRef.current[index] = el }}></div>
                         <TextReveal text={me.number} className="heading font-medium leading-none md:col-span-2" marginRight="mr-1.5" />
                         <TextReveal text={me.title} className="mb-xs heading font-medium leading-none col-start-2 col-span-3 md:col-start-6 md:col-span-5 xl:col-start-7" marginRight="mr-1.5" />
                         <TextReveal text={me.description} className="mb-md text-style col-start-1 col-span-4 md:col-start-6 md:col-span-5 xl:col-start-7 xl:col-span-3" marginRight="mr-1" />

@@ -35,6 +35,7 @@ export default {
         "dark": "var(--dark)",
         "semi-dark": "var(--semi-dark)",
         "violet": "var(--violet)",
+        "dark-violet": "var(--dark-violet)",
         "light-violet": "var(--light-violet)",
         "bluish": "var(--bluish)",
         "white": "var(--white)",
