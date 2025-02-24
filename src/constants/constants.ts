@@ -107,7 +107,7 @@ export const expertise = [
 export const statistics = [
     { title: "3", description: "Clients worked with" },
     { title: "10", description: "Projects completed" },
-    { title: "2-3", description: "Years of design and UI/UX experience" },
+    { title: "2", description: "Years of design and UI/UX experience" },
     { title: "4", description: "On going projects" },
 ]
 

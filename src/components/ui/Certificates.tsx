@@ -15,7 +15,7 @@ const Certificates = () => {
       <Image src={Glow6} alt="Glow Elipse" className='absolute -z-10 w-[50rem] h-auto' />
 
       <div className='flex flex-col items-center section-x-padding'>
-        <TextReveal text={certificate.title} className="heading leading-none uppercase font-medium mb-xs" marginRight="mr-0" />
+        <TextReveal text={certificate.title} className="text-heading-2 md:text-heading-display leading-none uppercase font-medium mb-xs" marginRight="mr-0" />
         <TextReveal text={certificate.content} className="flex items-center justify-center text-style md:w-2/3 md:text-base text-center" marginRight="mr-1" />
       </div>
 

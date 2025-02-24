@@ -5,6 +5,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import useGsapAnimations from "@/hooks/useGsapAnimations";
 import TextReveal from "./TextReveal";
 import { moreAboutMe } from "@/constants/constants";
+import Glow3 from '../../../public/images/glow/Glow3.webp'
+import Grid1 from '../../../public/images/glow/Grid2.webp'
+
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,12 +37,14 @@ const WhoAmI = () => {
     return (
         <div className="section-x-padding pt-xl md:pt-3xl pb-xl md:pb-3xl">
             {/* <TextReveal text="More About Me" className="heading leading-none col-start-1 col-span-4 md:col-span-10 lg:col-span-12" marginRight="mr-2" /> */}
+            <Image src={Glow3} alt="Glow3" className="absolute right-0 top-[80vh]" id="glow__animation3" />
+            <Image src={Grid1} alt='Grid Image' className='absolute -left-40 top-[105vh]'/>
             {
                 moreAboutMe.map((me, index) => (
-                    <div key={index} className="grid grid-cols-4 md:grid-cols-10 xl:grid-cols-12 gap-x-xs">
+                    <div key={index} className="grid grid-cols-4 md:grid-cols-10 xl:grid-cols-12 gap-x-xs mb-lg">
                         <div className="mb-md h-0.5 bg-violet w-full col-span-4 md:col-span-10 xl:col-span-12" ref={(el) => { linesRef.current[index] = el }}></div>
-                        <TextReveal text={me.number} className="text-heading-3 md:text-heading-2 leading-none" marginRight="mr-1.5" />
-                        <TextReveal text={me.title} className="mb-xs text-heading-3 md:text-heading-2 leading-none col-start-2 col-span-2 md:col-start-6 md:col-span-5 xl:col-start-7" marginRight="mr-1.5" />
+                        <TextReveal text={me.number} className="heading font-medium leading-none md:col-span-2" marginRight="mr-1.5" />
+                        <TextReveal text={me.title} className="mb-xs heading font-medium leading-none col-start-2 col-span-3 md:col-start-6 md:col-span-5 xl:col-start-7" marginRight="mr-1.5" />
                         <TextReveal text={me.description} className="mb-md text-style col-start-1 col-span-4 md:col-start-6 md:col-span-5 xl:col-start-7 xl:col-span-3" marginRight="mr-1" />
                     </div>  
                 ))

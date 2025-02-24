@@ -16,7 +16,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
           <filter id="grainy">
             <feTurbulence 
               type="turbulence" 
-              baseFrequency="0.5" 
+              baseFrequency="0.6" 
               // numOctaves="6" 
               // stitchTiles="stitch"
             >
