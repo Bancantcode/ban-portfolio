@@ -1,4 +1,3 @@
-'use client'
 import useLenisScroll from "@/hooks/useLenisScroll";
 import HomeHero from "@/components/ui/HomeHero";
 import HomeService from "@/components/ui/HomeService";
