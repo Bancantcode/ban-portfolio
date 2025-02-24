@@ -1,13 +1,13 @@
-// 'use client'
+'use client'
 import { navLinks } from "@/constants/constants"
 import Button from "../ui/Button"
 import Logo from '../../../public/images/SB-logo.png'
 import Image from "next/image"
-// import useGsapAnimations from "@/hooks/useGsapAnimations"
+import useGsapAnimations from "@/hooks/useGsapAnimations"
 import Link from "next/link"
 
 const Navbar = () => {
-  // useGsapAnimations();
+  useGsapAnimations();
   return (
     <header className="flex justify-between items-center py-xs md:py-md section-x-padding">
       <div className="overflow-hidden">
@@ -18,9 +18,9 @@ const Navbar = () => {
       <div className="hidden md:flex gap-1">
         {
           navLinks.map(link => (
-            <a key={link.title} href={link.href} className="">
+            <Link key={link.title} href={link.href} className="">
               <Button id="nav-btn" title={link.title} containerClass="" />
-            </a>
+            </Link>
           ))
         }
       </div>
