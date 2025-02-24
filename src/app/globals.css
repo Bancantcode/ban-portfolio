@@ -35,18 +35,12 @@
     --text-bold: '__nm_b0ld', sans-serif;
 
     --text-opacity: 1;
-    --dark: rgb(21 19 28 / var(--text-opacity)); 
-    --semi-dark: rgb(28 24 45 / var(--text-opacity)); 
-    --violet: rgb(64 49 122 / var(--text-opacity));
-    --light-violet: rgb(193 177 255 / var(--text-opacity));
-    --bluish: rgb(79 70 229 / var(--text-opacity));
-    --white: rgb(243 243 241 / var(--text-opacity));
-
-    /* dark — #15131C */
-    /* semi-dark — #1C182D */
-    /* violet — #40317A */
-    /* light-violet — #C1B1FF */
-    /* bluish — #4F46E5 */
+    --dark: rgb(21 19 28 / var(--text-opacity)); /* dark — #15131C */
+    --semi-dark: rgb(28 24 45 / var(--text-opacity)); /* semi-dark — #1C182D */
+    --violet: rgb(64 49 122 / var(--text-opacity)); /* violet — #40317A */
+    --light-violet: rgb(193 177 255 / var(--text-opacity)); /* light-violet — #C1B1FF */
+    --bluish: rgb(79 70 229 / var(--text-opacity)); /* bluish — #4F46E5 */
+    --white: rgb(243 243 241 / var(--text-opacity)); /* bluish — #F3F3F1 */
 
     --space-3xs: clamp(0.3125rem, 0.3125rem + 0vi, 0.3125rem);
     --space-2xs: clamp(0.5625rem, 0.5446rem + 0.0893vi, 0.625rem);
@@ -56,7 +50,7 @@
     --space-lg: clamp(2.25rem, 2.1786rem + 0.3571vi, 2.5rem);
     --space-xl: clamp(3.375rem, 3.2679rem + 0.5357vi, 3.75rem);
     --space-2xl: clamp(4.5rem, 4.3571rem + 0.7143vi, 5rem);
-    --space-3xl: clamp(5.75rem, 6.2571rem + 1.2023vi, 7.25rem);
+    --space-3xl: clamp(4.75rem, 5.2571rem + 1.2023vi, 5.25rem);
   }
 
   body {
@@ -74,7 +68,7 @@
     height: 100%;
     z-index: 3023023023020;
     pointer-events: none;
-    opacity: 20%;
+    opacity: 18%;
   }
   
   body::before {
