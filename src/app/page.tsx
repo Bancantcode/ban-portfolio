@@ -6,6 +6,7 @@ import HomeSelectedWork from "@/components/ui/HomeSelectedWork";
 
 const Home = () => {
   useLenisScroll();
+
   return (
     <main className="">
       <div className="h-screen flex justify-center items-center">
