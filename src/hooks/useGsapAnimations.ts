@@ -112,7 +112,37 @@ const useGsapAnimations = () => {
       duration: 3,
     });
 
-    
+    // SKILLS ANIMATION
+    gsap.fromTo('#skills__animation', { y: "220%" },
+      {
+        y: "0%",
+        duration: 1.2,
+        ease: "power4.out",
+        stagger: 0.005, //adjust stagger
+        scrollTrigger: {
+          trigger: '#skills__animation',
+          start: "top 115%",
+          end: "top 50%",
+          scrub: false,
+        },
+      }
+    );
+
+    // GRAPH ANIMATION
+    gsap.fromTo('#graph__animation', { y: "100%" },
+      {
+        y: "0%",
+        duration: 1.2,
+        ease: "power4.out",
+        stagger: 0.005, //adjust stagger
+        scrollTrigger: {
+          trigger: '#graph__animation',
+          start: "top 85%",
+          end: "top 50%",
+          scrub: false,
+        },
+      }
+    );
     
     
 

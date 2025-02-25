@@ -26,7 +26,7 @@ const WhoAmI = () => {
                     ease: 'power4.out',
                     scrollTrigger: {
                         trigger: line,
-                        start: 'top 80%',
+                        start: 'top 70%',
                         toggleActions: 'play none none reverse',
                     },
                 }
@@ -42,7 +42,7 @@ const WhoAmI = () => {
             {
                 moreAboutMe.map((me, index) => (
                     <div key={index} className="grid grid-cols-4 md:grid-cols-10 xl:grid-cols-12 gap-x-xs mb-lg">
-                        <div className="mb-md h-0.5 gradient w-full col-span-4 md:col-span-10 xl:col-span-12" ref={(el) => { linesRef.current[index] = el }}></div>
+                        <div className="mb-md h-0.5 line w-full col-span-4 md:col-span-10 xl:col-span-12" ref={(el) => { linesRef.current[index] = el }}></div>
                         <TextReveal text={me.number} className="heading font-medium leading-none md:col-span-2" marginRight="mr-1.5" />
                         <TextReveal text={me.title} className="mb-xs heading font-medium leading-none col-start-2 col-span-3 md:col-start-6 md:col-span-5 xl:col-start-7" marginRight="mr-1.5" />
                         <TextReveal text={me.description} className="mb-md text-style col-start-1 col-span-4 md:col-start-6 md:col-span-5 xl:col-start-7 xl:col-span-3" marginRight="mr-1" />
