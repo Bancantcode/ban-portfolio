@@ -113,15 +113,15 @@ const useGsapAnimations = () => {
     });
 
     // SKILLS ANIMATION
-    gsap.fromTo('#skills__animation', { y: "220%" },
+    gsap.fromTo('#skills__animation', { opacity: 0 }, // from
       {
-        y: "0%",
-        duration: 1.2,
-        ease: "power4.out",
+        opacity: 1, // to
+        duration: 2,
+        ease: "power2.out",
         stagger: 0.005, //adjust stagger
         scrollTrigger: {
           trigger: '#skills__animation',
-          start: "top 115%",
+          start: "top 65%",
           end: "top 50%",
           scrub: false,
         },
