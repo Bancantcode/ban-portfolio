@@ -7,6 +7,7 @@ import TextReveal from "./TextReveal"
 import { useRef, useEffect } from "react"
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import ParallaxImage from "./ParallaxImage"
 gsap.registerPlugin(ScrollTrigger);
 
 const HomeService = () => {
@@ -33,15 +34,25 @@ const HomeService = () => {
 
     return (
         <div className="section-x-padding pt-xl md:pt-3xl pb-xl md:pb-3xl">
-            <Image src={Glow3} alt="Glow3" className="absolute right-0 top-[80vh]" id="glow__animation3" />
+            {/* <Image src={Glow3} alt="Glow3" className="absolute right-0 top-[80vh]" id="glow__animation3" /> */}
             <TextReveal text="How Can I Help You" className="text-heading-2 md:text-heading-1 lg:text-heading-display leading-none uppercase font-medium mb-lg" marginRight="mr-5" />
             {
                 servicesInfo.map((service, index) => (
                     <div key={index} className="grid grid-cols-4 md:grid-cols-10 xl:grid-cols-12 gap-x-xs mb-lg">
                         <div className="mb-md h-0.5 line w-full col-span-4 md:col-span-10 xl:col-span-12" ref={(el) => { linesRef.current[index] = el }}></div>
                         <TextReveal text={service.number} className="heading font-medium leading-none md:col-span-2" marginRight="mr-1.5" />
-                        <TextReveal text={service.name} className="mb-xs heading font-medium leading-none col-start-2 col-span-3 md:col-start-6 md:col-span-5 xl:col-start-7" marginRight="mr-1.5" />
-                        <TextReveal text={service.description} className="mb-md text-style col-start-1 col-span-4 md:col-start-6 md:col-span-5 xl:col-start-7 xl:col-span-3" marginRight="mr-1" />
+                        <TextReveal text={service.name} className="mb-xs heading font-medium leading-none col-start-2 col-span-3 md:col-start-6 md:col-span-5 xl:col-start-4" marginRight="mr-1.5" />
+                        <TextReveal text={service.description} className="mb-md text-style col-start-1 col-span-4 md:col-start-6 md:col-span-5 xl:col-start-4 xl:col-span-3" marginRight="mr-1" />
+
+                        <div className="">
+                            <ParallaxImage 
+                                src={service.image}
+                                alt={service.alt}
+                                width={service.height}
+                                height={service.width}
+                                className="h-80 w-90"
+                            />
+                        </div>
                     </div>  
                 ))
             }

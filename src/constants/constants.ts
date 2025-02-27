@@ -1,3 +1,10 @@
+// service offering
+import FrontEnd from '../../public/images/service__images/testimage1.jpg'
+import WebDesign from '../../public/images/service__images/testimage2.jpg'
+import BackEnd from '../../public/images/service__images/testimage3.jpg'
+import SEO from '../../public/images/service__images/testimage4.jpg'
+
+// certificates
 import Certificate1 from '../../public/images/e-certificates/FullstackDevBootcamp-GeeksForGeeks.webp'
 import Certificate2 from '../../public/images/e-certificates/GetStartedWithFigma.webp'
 import Certificate3 from '../../public/images/e-certificates/GreatLearning_SantiagoBryan_IntroToJavascript.webp'
@@ -15,6 +22,7 @@ import Certificate14 from '../../public/images/e-certificates/SoloLearn_Santiago
 import Certificate15 from '../../public/images/e-certificates/SoloLearn_SantiagoBryan_WebDevelopment.webp'
 import Certificate16 from '../../public/images/e-certificates/TheCompleteFullStack_WebDevelopmentBootcamp2024.webp'
 
+// skills
 import HTML from '../../public/images/logos/html.svg'
 import CSS from '../../public/images/logos/css.svg'
 import SASS from '../../public/images/logos/sass.svg'
@@ -47,6 +55,8 @@ import MySQL from '../../public/images/logos/mysql.svg'
 import MongoDB from '../../public/images/logos/mongodb.svg'
 import Postman from '../../public/images/logos/postman.svg'
 
+
+
 export const navLinks = [
     { title: 'Home,', href: "/" },
     { title: 'About,', href: "/about" },
@@ -61,6 +71,10 @@ export const servicesInfo = [
         number: '[1]',
         name: 'Frontend Development', 
         description: "A well-designed website can take your brand to the next level. I create custom websites that truly reflect your style, ensuring they run smoothly and look great. With engaging animations, I make sure your visitors stay interested and keep coming back.",
+        image: FrontEnd,
+        alt: "Frontend Development Image",
+        width: 900,
+        height: 500,
         offers: [
             { service: 'Responsive Design' },
             { service: 'CMS Integration' },
@@ -71,6 +85,10 @@ export const servicesInfo = [
         number: '[2]',
         name: 'Web Design', 
         description: "Boost your online presence with a website that speaks to your audience's needs and emotions. I design eye-catching, high-performing sites that support your business goals, helping you stand out and grow successfully.", 
+        image: WebDesign,
+        alt: "Web Design Image",
+        width: 900,
+        height: 500,
         offers: [
             { service: 'Wireframing' },
             { service: 'Mockups' },
@@ -82,6 +100,10 @@ export const servicesInfo = [
         number: '[3]',
         name: 'Backend Development', 
         description: "I strengthen applications with reliable backend solutions for smooth data management and security. I build scalable APIs and efficient databases to keep your web applications running safely and efficiently.",
+        image: BackEnd,
+        alt: "Backend Development Image",
+        width: 900,
+        height: 300,
         offers: [
             { service: 'API Development' },
             { service: 'Database Management' },
@@ -92,6 +114,10 @@ export const servicesInfo = [
         number: '[4]',
         name: 'SEO', 
         description: "Increase your website's visibility with custom SEO strategies that bring in the right audience. I help your business stand out in search results, driving more traffic and boosting engagement.",
+        image: SEO,
+        alt: "Search Engine Optimization Image",
+        width: 900,
+        height: 300,
         offers: [
             { service: 'Keyword Research' },
             { service: 'On-Page SEO' },
@@ -164,18 +190,66 @@ export const certificates = [
         buttonText: "View Certificates",
         link: "https://www.google.com/",
         upper_certificates: [
-            { title: 'Geeks For Geeks', src: Certificate1, alt: 'Geeks For Geeks Certificate' },
-            { title: 'Intro To Javascript', src: Certificate3, alt: 'Intro To Javascript Certificate' },
-            { title: 'SoloLearn Web Development', src: Certificate15, alt: 'SoloLearn Web Development Certificate' },
-            { title: 'Hubspot SEO 1', src: Certificate5, alt: 'Hubspot SEO 1 Certificate' },
-            { title: 'SoloLearn Intro to Javascript', src: Certificate13, alt: 'SoloLearn Intro to Javascript Certificate' },
-            { title: 'UI/UX Design', src: Certificate4, alt: 'UI/UX Design Certificate' },
-            { title: 'Hubspot SEO 2', src: Certificate6, alt: 'Hubspot SEO 2 Certificate' },
-            { title: 'Legacy Javascript Algorithms and Data Structure', src: Certificate8, alt: 'Legacy Javascript Algorithms and Data Structure Certificate' },
-            { title: 'Get Started With Figma', src: Certificate2, alt: 'Get Started With Figma Certificate' },
-            { title: 'Intro to Web Design Principle', src: Certificate7, alt: 'Intro to Web Design Principle Certificate' },
-            { title: 'The Complete Full Stack Web Development 2024', src: Certificate16, alt: 'The Complete Full Stack Web Development 2024 Certificate' },
-            { title: 'SoloLearn Intro to CSS', src: Certificate12, alt: 'SoloLearn Intro to CSS Certificate' },
+            { 
+                title: 'Geeks For Geeks', 
+                src: Certificate1, 
+                alt: 'Geeks For Geeks Certificate' 
+            },
+            { 
+                title: 'Intro To Javascript', 
+                src: Certificate3, 
+                alt: 'Intro To Javascript Certificate' 
+            },
+            { 
+                title: 'SoloLearn Web Development', 
+                src: Certificate15, 
+                alt: 'SoloLearn Web Development Certificate' 
+            },
+            { 
+                title: 'Hubspot SEO 1', 
+                src: Certificate5, 
+                alt: 'Hubspot SEO 1 Certificate' 
+            },
+            { 
+                title: 'SoloLearn Intro to Javascript', 
+                src: Certificate13, 
+                alt: 'SoloLearn Intro to Javascript Certificate' 
+            },
+            { 
+                title: 'UI/UX Design', 
+                src: Certificate4, 
+                alt: 'UI/UX Design Certificate' 
+            },
+            { 
+                title: 'Hubspot SEO 2', 
+                src: Certificate6, 
+                alt: 'Hubspot SEO 2 Certificate' 
+            },
+            { 
+                title: 'Legacy Javascript Algorithms and Data Structure', 
+                src: Certificate8, 
+                alt: 'Legacy Javascript Algorithms and Data Structure Certificate' 
+            },
+            { 
+                title: 'Get Started With Figma', 
+                src: Certificate2, 
+                alt: 'Get Started With Figma Certificate' 
+            },
+            { 
+                title: 'Intro to Web Design Principle', 
+                src: Certificate7, 
+                alt: 'Intro to Web Design Principle Certificate' 
+            },
+            { 
+                title: 'The Complete Full Stack Web Development 2024', 
+                src: Certificate16, 
+                alt: 'The Complete Full Stack Web Development 2024 Certificate' 
+            },
+            { 
+                title: 'SoloLearn Intro to CSS', 
+                src: Certificate12, 
+                alt: 'SoloLearn Intro to CSS Certificate' 
+            },
         ],
         lower_certificates: [
             { title: 'SoloLearn Javascript Intermediate', src: Certificate14, alt: 'SoloLearn Javascript Intermediate Certificate' },

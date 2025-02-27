@@ -2,17 +2,19 @@
 import Image from "next/image";
 import { useRef, useEffect } from "react"
 import { useLenis } from "lenis/react";
+import { StaticImageData } from "next/image";
 
 const lerp = (start: number, end: number, factor: number): number => start + (end - start) * factor;
 
 interface ParallaxImageProps {
-    src: string;
+    src: string | StaticImageData;
     alt: string;
     width: number;
     height: number;
+    className: string;
 }
 
-const ParallaxImage: React.FC<ParallaxImageProps> = ({ src, alt, width, height }) => {
+const ParallaxImage: React.FC<ParallaxImageProps> = ({ src, alt, width, height, className }) => {
     const imageRaf = useRef<HTMLImageElement | null>(null);
     const bounds = useRef<{ top: number; bottom: number } | null>(null);
     const currentTranslateY = useRef<number>(0);
@@ -77,6 +79,7 @@ const ParallaxImage: React.FC<ParallaxImageProps> = ({ src, alt, width, height }
                     willChange:"transform",
                     transform: "translateY(0) scale(1.25)",
                 }} 
+                className={className}
             />
         </div>
     )
