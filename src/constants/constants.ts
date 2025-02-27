@@ -55,12 +55,58 @@ export const navLinks = [
     { title: 'Contact,', href: "/contact" },
 ]
 
+// service
+export const servicesInfo = [
+    { 
+        number: '[1]',
+        name: 'Frontend Development', 
+        description: "A well-designed website can take your brand to the next level. I create custom websites that truly reflect your style, ensuring they run smoothly and look great. With engaging animations, I make sure your visitors stay interested and keep coming back.",
+        offers: [
+            { service: 'Responsive Design' },
+            { service: 'CMS Integration' },
+            { service: 'Motion & Animations' },
+        ] 
+    },
+    { 
+        number: '[2]',
+        name: 'Web Design', 
+        description: "Boost your online presence with a website that speaks to your audience's needs and emotions. I design eye-catching, high-performing sites that support your business goals, helping you stand out and grow successfully.", 
+        offers: [
+            { service: 'Wireframing' },
+            { service: 'Mockups' },
+            { service: 'UX Writing' },
+            { service: 'Branding & Identity Design' },
+        ] 
+    },
+    { 
+        number: '[3]',
+        name: 'Backend Development', 
+        description: "I strengthen applications with reliable backend solutions for smooth data management and security. I build scalable APIs and efficient databases to keep your web applications running safely and efficiently.",
+        offers: [
+            { service: 'API Development' },
+            { service: 'Database Management' },
+            { service: 'Authentication & Security' },
+        ] 
+    },
+    { 
+        number: '[4]',
+        name: 'SEO', 
+        description: "Increase your website's visibility with custom SEO strategies that bring in the right audience. I help your business stand out in search results, driving more traffic and boosting engagement.",
+        offers: [
+            { service: 'Keyword Research' },
+            { service: 'On-Page SEO' },
+            { service: '' },
+        ] 
+    },
+]
+
+// selected works
 export const projectInfo = [
-    { role: '', image: '', name: '', description: '' },
-    { role: '', image: '', name: '', description: '' },
-    { role: '', image: '', name: '', description: '' },
-    { role: '', image: '', name: '', description: '' },
-    { role: '', image: '', name: '', description: '' },
+    { role: 'Independent Developer', image: '', name: 'Satori Specialty Coffee', description: '' },
+    { role: 'Project Lead & Frontend Lead', image: '', name: 'Akaru', description: '' },
+    { role: 'Frontend Developer', image: '', name: 'Unite', description: '' },
+    { role: 'Project Lead & Frontend Lead', image: '', name: 'Crown Residence', description: '' },
+    { role: 'Frontend Developer', image: '', name: 'MNHS Learning Management System', description: '' },
 ];
 
 export const socials = [
@@ -149,6 +195,6 @@ export const certificates = [
 
 export const moreAboutMe = [
     { number: "[01]", title: "Who Am I", description: "I'm Bryan, a passionate web developer with a keen eye for design and functionality. I specialize in creating modern, user-friendly websites that blend aesthetics with performance. With a background in frontend development, a bit of backend, and UI/UX design, I love bringing ideas to life through clean code and intuitive interfaces." },
-    { number: "[02]", title: "How It Started", description: "My journey into web development began with a simple curiosity about how websites work. What started as experimenting with HTML and CSS quickly turned into a passion for building interactive and dynamic experiences. Over the years, I’ve honed my skills through school projects, client work, and continuous learning, always pushing myself to improve." },
-    { number: "[03]", title: "How's It Going", description: "Today, I’m an aspiring frontend developer eager to take on new challenges. From crafting SEO-optimized websites to working on projects for businesses, I’m always exploring new technologies and refining my skills. As I approach my final year of university, I’m looking forward to expanding my experience, collaborating with creative minds, and making an impact in the industry." },
+    { number: "[02]", title: "How It Started", description: "My journey into web development began with a simple curiosity about how websites work. What started as experimenting with HTML and CSS quickly turned into a passion for building interactive and dynamic experiences. Over the years, I've honed my skills through school projects, client work, and continuous learning, always pushing myself to improve." },
+    { number: "[03]", title: "How's It Going", description: "Today, I'm an aspiring frontend developer eager to take on new challenges. From crafting SEO-optimized websites to working on projects for businesses, I'm always exploring new technologies and refining my skills. As I approach my final year of university, I'm looking forward to expanding my experience, collaborating with creative minds, and making an impact in the industry." },
 ]

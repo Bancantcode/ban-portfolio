@@ -14,12 +14,11 @@ const Home = () => {
         <h1>Hero</h1>
       </div>
 
-      <section className="h-screen flex justify-center items-center">
+      <section>
         <HomeService />
-        <h1>Services</h1>
       </section>
 
-      <section className="h-screen flex justify-center items-center">
+      <section>
         <HomeSelectedWork />
         <h1>Selected Works</h1>
       </section>
