@@ -42,12 +42,12 @@ const HomeService = () => {
                         <div className="mb-md h-0.5 line w-full col-span-4 md:col-span-10 xl:col-span-12" ref={(el) => { linesRef.current[index] = el }}></div>
                         <TextReveal text={service.number} className="heading font-medium leading-none md:col-span-2" marginRight="mr-1.5" />  
                                               
-                        <div className="col-start-2 col-span-3 md:col-start-4 md:col-span-7 lg:col-start-3 lg:col-span-4 xl:col-start-3 xl:col-span-4">
+                        <div className="col-start-2 col-span-3 md:col-start-4 md:col-span-7 lg:col-start-3 lg:col-span-6 xl:col-start-3 xl:col-span-4">
                             <TextReveal text={service.name} className="mb-xs heading font-medium leading-none" marginRight="mr-1.5" />
-                            <TextReveal text={service.description} className="mb-lg text-style" marginRight="mr-1" />
+                            <TextReveal text={service.description} className="mb-lg text-style xl:w-4/5" marginRight="mr-1" />
                         </div>
 
-                        <div className="mb-md overflow-hidden h-72 md:h-96 lg:h-[30rem] flex justify-center items-center text-style col-start-1 col-span-4 md:col-start-4 md:col-span-7 xl:col-start-9 xl:col-span-4">
+                        <div className="mb-md overflow-hidden h-72 md:h-96 lg:h-[30rem] flex justify-center items-center text-style col-start-1 col-span-4 md:col-start-4 md:col-span-7 lg:col-start-3 xl:col-start-9 xl:col-span-4">
                             <ParallaxImage 
                                 src={service.image}
                                 alt={service.alt}
