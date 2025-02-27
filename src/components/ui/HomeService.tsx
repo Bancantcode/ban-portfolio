@@ -1,7 +1,7 @@
 'use client'
-// import Image from "next/image"
+import Image from "next/image"
 import useGsapAnimations from "@/hooks/useGsapAnimations"
-// import Glow3 from '../../../public/images/glow/Glow3.webp'
+import Glow3 from '../../../public/images/glow/Glow3.webp'
 import { servicesInfo } from '../../constants/constants'
 import TextReveal from "./TextReveal"
 import { useRef, useEffect } from "react"
@@ -34,8 +34,8 @@ const HomeService = () => {
 
     return (
         <div className="section-x-padding pt-xl md:pt-3xl pb-xl md:pb-3xl">
-            {/* <Image src={Glow3} alt="Glow3" className="absolute right-0 top-[80vh]" id="glow__animation3" /> */}
-            <TextReveal text="How Can I Help You" className="text-heading-2 md:text-heading-1 lg:text-heading-display leading-none uppercase font-medium mb-lg" marginRight="" />
+            <Image src={Glow3} alt="Glow3" className="absolute right-0 top-[130vh]" id="glow__animation3" />
+            <TextReveal text="How I Can Help You" className="text-heading-1 lg:text-heading-display lg:w-4/5 leading-none uppercase font-medium mb-lg" marginRight="mr-2 lg:mr-5" />
             {
                 servicesInfo.map((service, index) => (
                     <div key={index} className="grid grid-cols-4 md:grid-cols-10 xl:grid-cols-12 gap-x-xs mb-lg">
@@ -45,6 +45,16 @@ const HomeService = () => {
                         <div className="col-start-2 col-span-3 md:col-start-4 md:col-span-7 lg:col-start-3 lg:col-span-6 xl:col-start-3 xl:col-span-4">
                             <TextReveal text={service.name} className="mb-xs heading font-medium leading-none" marginRight="mr-1.5" />
                             <TextReveal text={service.description} className="mb-lg text-style xl:w-4/5" marginRight="mr-1" />
+                            <ul className="mb-xl">
+                                {service.offers.map((offer, offerIndex) => (
+                                    <div key={offerIndex}>
+                                        <li className="">
+                                            <TextReveal text={offer.service} className="text-base md:text-base-large leading-tight" marginRight="mr-1" />
+                                        </li>
+                                        <div className="mb-2xs md:mb-xs h-0.5 line w-full col-span-4 md:col-span-10 xl:col-span-12" ref={(el) => { linesRef.current[index + servicesInfo.length + offerIndex] = el }}></div>
+                                    </div>
+                                ))}
+                            </ul>
                         </div>
 
                         <div className="mb-md overflow-hidden h-72 md:h-96 lg:h-[30rem] flex justify-center items-center text-style col-start-1 col-span-4 md:col-start-4 md:col-span-7 lg:col-start-3 xl:col-start-9 xl:col-span-4">

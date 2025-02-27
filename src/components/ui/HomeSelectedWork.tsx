@@ -7,7 +7,7 @@ const HomeSelectedWork = () => {
     useGsapAnimations();
     return (
         <section>
-            <Image src={Glow2} alt="Glow2" className="absolute top-[210vh] inset-0" id="glow__animation2"/>
+            <Image src={Glow2} alt="Glow2" className="absolute top-[350vh] inset-0" id="glow__animation2"/>
         </section>
     )
 }

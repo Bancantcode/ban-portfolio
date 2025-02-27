@@ -121,7 +121,6 @@ export const servicesInfo = [
         offers: [
             { service: 'Keyword Research' },
             { service: 'On-Page SEO' },
-            { service: '' },
         ] 
     },
 ]
@@ -268,7 +267,19 @@ export const certificates = [
 ]
 
 export const moreAboutMe = [
-    { number: "[01]", title: "Who Am I", description: "I'm Bryan, a passionate web developer with a keen eye for design and functionality. I specialize in creating modern, user-friendly websites that blend aesthetics with performance. With a background in frontend development, a bit of backend, and UI/UX design, I love bringing ideas to life through clean code and intuitive interfaces." },
-    { number: "[02]", title: "How It Started", description: "My journey into web development began with a simple curiosity about how websites work. What started as experimenting with HTML and CSS quickly turned into a passion for building interactive and dynamic experiences. Over the years, I've honed my skills through school projects, client work, and continuous learning, always pushing myself to improve." },
-    { number: "[03]", title: "How's It Going", description: "Today, I'm an aspiring frontend developer eager to take on new challenges. From crafting SEO-optimized websites to working on projects for businesses, I'm always exploring new technologies and refining my skills. As I approach my final year of university, I'm looking forward to expanding my experience, collaborating with creative minds, and making an impact in the industry." },
+    { 
+        number: "[01]", 
+        title: "Who Am I", 
+        description: "I'm Bryan, a passionate web developer with a keen eye for design and functionality. I specialize in creating modern, user-friendly websites that blend aesthetics with performance. With a background in frontend development, a bit of backend, and UI/UX design, I love bringing ideas to life through clean code and intuitive interfaces." 
+    },
+    { 
+        number: "[02]", 
+        title: "How It Started", 
+        description: "My journey into web development began with a simple curiosity about how websites work. What started as experimenting with HTML and CSS quickly turned into a passion for building interactive and dynamic experiences. Over the years, I've honed my skills through school projects, client work, and continuous learning, always pushing myself to improve." 
+    },
+    { 
+        number: "[03]", 
+        title: "How's It Going", 
+        description: "Today, I'm an aspiring frontend developer eager to take on new challenges. From crafting SEO-optimized websites to working on projects for businesses, I'm always exploring new technologies and refining my skills. As I approach my final year of university, I'm looking forward to expanding my experience, collaborating with creative minds, and making an impact in the industry." 
+    },
 ]

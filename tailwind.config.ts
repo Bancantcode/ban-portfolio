@@ -11,10 +11,10 @@ export default {
       fontSize: {
         "base-small": "clamp(0.821rem, 0.3071rem + 0.4647vi, 0.8943rem)",
         "base": "clamp(1.2rem, 1rem + 1vw, 1.05rem)",
-        "base-large": "clamp(1.1rem, 0.7071rem + 0.5143vi, 1.4rem)",
-        'heading-6': 'clamp(1rem, 0.928rem + 0.36vw, 1.25rem)',
-        "heading-5": "clamp(1.2rem, 1rem + 0.45vw, 1.57rem)",
-        "heading-4": "clamp(1.4rem, 0.9rem + 0.5vw, 1.5rem)",
+        "base-large": "clamp(1.3rem, 0.7071rem + 0.5143vi, 1.6rem)",
+        'heading-6': 'clamp(1rem, 0.928rem + 0.36vw, 1.25rem)', //change
+        "heading-5": "clamp(1rem, 0.928rem + 0.36vw, 1.25rem)", //change
+        "heading-4": "clamp(1.4rem, 0.9rem + 0.5vw, 1.5rem)", //change
         "heading-3": "clamp(1.4rem, 0.9rem + 0.5vw, 1.5rem)",
         "heading-2": "clamp(2rem, 1.5rem + 2.2vi, 1.6rem)",
         "heading-1": "clamp(3.5rem, 3.25rem + 1vw, 3.2rem)",
