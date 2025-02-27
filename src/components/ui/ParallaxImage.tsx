@@ -69,7 +69,7 @@ const ParallaxImage: React.FC<ParallaxImageProps> = ({ src, alt, width, height, 
     return (
         <div style={{ overflow: "hidden" }}>
             <Image 
-                priority={true}
+                // priority={true}
                 ref={imageRaf}
                 src={src}
                 alt={alt}
@@ -80,6 +80,7 @@ const ParallaxImage: React.FC<ParallaxImageProps> = ({ src, alt, width, height, 
                     transform: "translateY(0) scale(1.25)",
                 }} 
                 className={className}
+                loading='lazy'
             />
         </div>
     )

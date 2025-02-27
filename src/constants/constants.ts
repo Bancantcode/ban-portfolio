@@ -73,8 +73,8 @@ export const servicesInfo = [
         description: "A well-designed website can take your brand to the next level. I create custom websites that truly reflect your style, ensuring they run smoothly and look great. With engaging animations, I make sure your visitors stay interested and keep coming back.",
         image: FrontEnd,
         alt: "Frontend Development Image",
-        width: 900,
-        height: 500,
+        width: 1000,
+        height: 1000,
         offers: [
             { service: 'Responsive Design' },
             { service: 'CMS Integration' },
@@ -87,8 +87,8 @@ export const servicesInfo = [
         description: "Boost your online presence with a website that speaks to your audience's needs and emotions. I design eye-catching, high-performing sites that support your business goals, helping you stand out and grow successfully.", 
         image: WebDesign,
         alt: "Web Design Image",
-        width: 900,
-        height: 500,
+        width: 1000,
+        height: 1000,
         offers: [
             { service: 'Wireframing' },
             { service: 'Mockups' },
@@ -102,8 +102,8 @@ export const servicesInfo = [
         description: "I strengthen applications with reliable backend solutions for smooth data management and security. I build scalable APIs and efficient databases to keep your web applications running safely and efficiently.",
         image: BackEnd,
         alt: "Backend Development Image",
-        width: 900,
-        height: 300,
+        width: 1000,
+        height: 1000,
         offers: [
             { service: 'API Development' },
             { service: 'Database Management' },
@@ -116,8 +116,8 @@ export const servicesInfo = [
         description: "Increase your website's visibility with custom SEO strategies that bring in the right audience. I help your business stand out in search results, driving more traffic and boosting engagement.",
         image: SEO,
         alt: "Search Engine Optimization Image",
-        width: 900,
-        height: 300,
+        width: 1000,
+        height: 1000,
         offers: [
             { service: 'Keyword Research' },
             { service: 'On-Page SEO' },

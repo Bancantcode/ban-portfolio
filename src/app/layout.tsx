@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 // import Footer from "@/components/common/Footer";
+import ReactLenis from "lenis/react";
 
 export const metadata: Metadata = {
   title: "Bryan Aaron Santiago",
@@ -10,24 +11,26 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className="">
-        <svg className="pointer-events-none absolute cursor-none">
-          <filter id="grainy">
-            <feTurbulence 
-              type="turbulence" 
-              baseFrequency="0.6" 
-              // numOctaves="6" 
-              // stitchTiles="stitch"
-            >
-            </feTurbulence>
-            <feColorMatrix type="saturate" values="0"></feColorMatrix>
-          </filter>
-        </svg>
-        <Navbar />
-          {children}
-        {/* <Footer /> */}
-      </body>
-    </html>
+    <ReactLenis root>
+      <html lang="en">
+        <body className="">
+          <svg className="pointer-events-none absolute cursor-none">
+            <filter id="grainy">
+              <feTurbulence 
+                type="turbulence" 
+                baseFrequency="0.6" 
+                // numOctaves="6" 
+                // stitchTiles="stitch"
+              >
+              </feTurbulence>
+              <feColorMatrix type="saturate" values="0"></feColorMatrix>
+            </filter>
+          </svg>
+          <Navbar />
+            {children}
+          {/* <Footer /> */}
+        </body>
+      </html>
+    </ReactLenis>
   );
 }
