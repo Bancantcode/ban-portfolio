@@ -51,7 +51,7 @@ const HomeService = () => {
                                         <li className="">
                                             <TextReveal text={offer.service} className="text-base md:text-base-large leading-tight" marginRight="mr-1" />
                                         </li>
-                                        <div className="mb-2xs md:mb-xs h-0.5 line w-full col-span-4 md:col-span-10 xl:col-span-12" ref={(el) => { linesRef.current[index + servicesInfo.length + offerIndex] = el }}></div>
+                                        <div className="mb-2xs md:mb-xs h-0.5 line w-full col-span-4 md:col-span-10 xl:col-span-12"></div>
                                     </div>
                                 ))}
                             </ul>

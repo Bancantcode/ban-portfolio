@@ -1,7 +1,7 @@
 'use client'
 // import useLenisScroll from "@/hooks/useLenisScroll";
 import HomeHero from "@/components/ui/HomeHero";
-import HomeService from "@/components/ui/HomeService";
+// import HomeService from "@/components/ui/HomeService";
 import HomeSelectedWork from "@/components/ui/HomeSelectedWork";
 
 const Home = () => {
@@ -15,12 +15,11 @@ const Home = () => {
       </div>
 
       <section>
-        <HomeService />
+        {/* <HomeService /> */}
       </section>
 
       <section>
         <HomeSelectedWork />
-        <h1>Selected Works</h1>
       </section>
 
       <section className="h-screen flex justify-center items-center">
