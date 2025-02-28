@@ -12,7 +12,7 @@ const Navbar = () => {
     <header className="flex justify-between items-center py-xs md:py-md section-x-padding">
       <div className="overflow-hidden">
         <Link href="/">
-          <Image className="" src={Logo} alt="Banwagon Logo" width={45} height={40} id="scroll-effect" />
+          <Image className="" src={Logo} alt="Banwagon Logo" width={45} height={40} id="scroll-effect" priority={true}/>
         </Link>
       </div>
       <div className="hidden md:flex gap-1">

@@ -1,12 +1,16 @@
 'use client'
 // import useLenisScroll from "@/hooks/useLenisScroll"
-import TextReveal from "@/components/ui/TextReveal"
+// import TextReveal from "@/components/ui/TextReveal"
+import Contact from "@/components/ui/Contact"
 
 const ContactPage = () => {
   // useLenisScroll();
   return (
     <main>
-      <section className="grid-style">
+      <section>
+        <Contact />
+      </section>
+      {/* <section className="grid-style">
         <TextReveal 
           text="Get in Touch"  
           className="text-heading-3 leading-none col-span-8"
@@ -17,7 +21,7 @@ const ContactPage = () => {
           className="text-base col-start-8 col-span-5" 
           marginRight="mr-1"
         />
-      </section>
+      </section> */}
     </main>
   )
 }
