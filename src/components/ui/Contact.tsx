@@ -1,23 +1,12 @@
 'use client'
 import TextReveal from "./TextReveal"
-import { useState} from "react";
+import { useState, useEffect } from "react";
 import useGsapAnimations from "@/hooks/useGsapAnimations";
+import gsap from "gsap";
 
 const Contact = () => {
     useGsapAnimations();
-    const [formData, setFormData] = useState({
-        service: '',
-        budget: '',
-        pages: '',
-        deadline: '',
-        name: '',
-        email: '',
-        number: '',
-        company: '',
-        website: '',
-        find: '',
-        project: ''
-    });
+    const [formData, setFormData] = useState({ service: '', budget: '', pages: '', deadline: '', name: '', email: '', number: '', company: '', website: '', find: '', project: '' });
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -26,21 +15,42 @@ const Contact = () => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const submissionData = {
-            service: formData.service,
-            budget: formData.budget,
-            pages: formData.pages,
-            deadline: formData.deadline,
-            name: formData.name,
-            email: formData.email,
-            number: formData.number,
-            company: formData.company,
-            website: formData.website,
-            find: formData.find,
-            project: formData.project
-        };
+        const submissionData = { service: formData.service, budget: formData.budget, pages: formData.pages, deadline: formData.deadline, name: formData.name, email: formData.email, number: formData.number, company: formData.company, website: formData.website, find: formData.find, project: formData.project };
         console.log(submissionData);
     };
+
+    useEffect(() => {
+        const inputs = document.querySelectorAll(".input__class");
+        const options = { root: null, rootMargin: '0px', threshold: 0.1 };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                const line = entry.target.nextElementSibling;
+                if (entry.isIntersecting) {
+                    gsap.to(line, { width: "100%", duration: 0.4, ease: "power2.out" });
+                } 
+            });
+        }, options);
+
+        inputs.forEach((input) => {
+            const wrapper = document.createElement("div");
+            wrapper.className = "relative w-full";
+            input.parentNode?.insertBefore(wrapper, input);
+            wrapper.appendChild(input);
+
+            const line = document.createElement("div");
+            line.className = "absolute left-0 bottom-0 h-0.5 bg-white w-0 transition-all duration-500";
+            wrapper.appendChild(line);
+
+            //start observer
+            observer.observe(input);
+        });
+
+        return () => {
+            //for cleanups
+            inputs.forEach((input) => observer.unobserve(input)); 
+        };
+    }, []);
 
     return (
         <div className="section-x-padding pt-xl md:pt-3xl pb-xl md:pb-3xl grid grid-cols-4 md:grid-cols-10 xl:grid-cols-12 gap-x-xs">
@@ -141,32 +151,39 @@ const Contact = () => {
                         marginRight="mr-1.5" 
                     />
 
-                    <div className="mb-xs border-b border-gray-300 focus:outline-none focus:border-blue-500">
-                        <input type="text" name="name" onChange={handleInputChange} placeholder="Enter your name" className="input-class bg-transparent w-full" />
+                    <div className="mb-xs">
+                        <label htmlFor="name" hidden>Enter your name</label>
+                        <input type="text" name="name" onChange={handleInputChange} placeholder="Enter your name" className="input__class bg-transparent w-full" />
                     </div>
 
-                    <div className="mb-xs border-b border-gray-300 focus:outline-none focus:border-blue-500">
-                        <input type="email" name="email" onChange={handleInputChange} placeholder="Enter your email" className="input-class bg-transparent w-full" />
+                    <div className="mb-xs">
+                        <label htmlFor="email" hidden></label>
+                        <input type="email" name="email" onChange={handleInputChange} placeholder="Enter your email" className="input__class bg-transparent w-full" />
                     </div>
 
-                    <div className="mb-xs border-b border-gray-300 focus:outline-none focus:border-blue-500">
-                        <input type="tel" name="number" onChange={handleInputChange} placeholder="Format: +44 00 123 4567" className="input-class bg-transparent w-full" />
+                    <div className="mb-xs">
+                        <label htmlFor="number" hidden></label>
+                        <input type="tel" name="number" onChange={handleInputChange} placeholder="Format: +44 00 123 4567" className="input__class bg-transparent w-full" />
                     </div>
 
-                    <div className="mb-xs border-b border-gray-300 focus:outline-none focus:border-blue-500">
-                        <input type="text" name="company" onChange={handleInputChange} placeholder="Enter your company's name" className="input-class bg-transparent w-full" />
+                    <div className="mb-xs">
+                        <label htmlFor="company" hidden></label>
+                        <input type="text" name="company" onChange={handleInputChange} placeholder="Enter your company's name" className="input__class bg-transparent w-full" />
                     </div>
 
-                    <div className="mb-xs border-b border-gray-300 focus:outline-none focus:border-blue-500">
-                        <input type="url" name="website" onChange={handleInputChange} placeholder="www.your-website.com" className="input-class bg-transparent w-full" />
+                    <div className="mb-xs">
+                        <label htmlFor="website" hidden></label>
+                        <input type="url" name="website" onChange={handleInputChange} placeholder="www.your-website.com" className="input__class bg-transparent w-full" />
                     </div>
 
-                    <div className="mb-xs border-b border-gray-300 focus:outline-none focus:border-blue-500">
-                        <input type="text" name="find" onChange={handleInputChange} placeholder="Where did you find me?" className="input-class bg-transparent w-full" />
+                    <div className="mb-xs">
+                        <label htmlFor="find" hidden></label>
+                        <input type="text" name="find" onChange={handleInputChange} placeholder="Where did you find me?" className="input__class bg-transparent w-full" />
                     </div>
 
-                    <div className="mb-xs border-b border-gray-300 focus:outline-none focus:border-blue-500">
-                        <textarea name="project" onChange={handleInputChange} placeholder="Tell me about your project" className="input-class bg-transparent w-full" />
+                    <div className="mb-xs">
+                        <label htmlFor="project" hidden></label>
+                        <textarea name="project" onChange={handleInputChange} placeholder="Tell me about your project" className="input__class bg-transparent w-full" />
                     </div>
                     
                     <button type="submit" className="mt-4">Submit</button>

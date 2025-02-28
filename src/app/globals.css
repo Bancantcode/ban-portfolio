@@ -60,7 +60,7 @@
     color: var(--white);
   }
 
-  body::before, body::after {
+  /* body::before, body::after {
     position: fixed;
     left: 0;
     top: 0;
@@ -74,7 +74,7 @@
   
   body::before {
     filter: url(#grainy);
-  }
+  } */
 
   body::-webkit-scrollbar {
     @apply w-[9px];
