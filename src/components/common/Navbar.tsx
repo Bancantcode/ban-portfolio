@@ -9,9 +9,9 @@ import Link from "next/link"
 const Navbar = () => {
   useGsapAnimations();
   return (
-    <header className="flex justify-between items-center py-xs md:py-md section-x-padding">
-      <div className="overflow-hidden">
-        <Link href="/">
+    <header className="absolute w-full z-99 flex justify-between items-center py-xs md:py-md section-x-padding">
+      <div className="overflow-hidden z-99">
+        <Link href="/" className="z-99">
           <Image className="" src={Logo} alt="Banwagon Logo" width={45} height={40} id="scroll-effect" priority={true}/>
         </Link>
       </div>

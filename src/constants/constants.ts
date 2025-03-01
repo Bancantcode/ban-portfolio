@@ -55,7 +55,8 @@ import MySQL from '../../public/images/logos/mysql.svg'
 import MongoDB from '../../public/images/logos/mongodb.svg'
 import Postman from '../../public/images/logos/postman.svg'
 
-
+// projects
+import Project1 from '../../public/images/projects/1.webp'
 
 export const navLinks = [
     { title: 'Home,', href: "/" },
@@ -127,11 +128,11 @@ export const servicesInfo = [
 
 // selected works
 export const projectInfo = [
-    { role: 'Independent Developer', image: '', name: 'Satori Specialty Coffee', description: '' },
-    { role: 'Project Lead & Frontend Lead', image: '', name: 'Akaru', description: '' },
-    { role: 'Frontend Developer', image: '', name: 'Unite', description: '' },
-    { role: 'Project Lead & Frontend Lead', image: '', name: 'Crown Residence', description: '' },
-    { role: 'Frontend Developer', image: '', name: 'MNHS Learning Management System', description: '' },
+    { role: 'Independent Developer', image: Project1, name: 'Satori Specialty Coffee', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vero earum repellendus obcaecati hic ex amet incidunt tenetur illum temporibus.' },
+    { role: 'Project Lead & Frontend Lead', image: Project1, name: 'Akaru', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vero earum repellendus obcaecati hic ex amet incidunt tenetur illum temporibus.' },
+    { role: 'Frontend Developer', image: Project1, name: 'Unite', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vero earum repellendus obcaecati hic ex amet incidunt tenetur illum temporibus.' },
+    { role: 'Project Lead & Frontend Lead', image: Project1, name: 'Crown Residence', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vero earum repellendus obcaecati hic ex amet incidunt tenetur illum temporibus.' },
+    { role: 'Frontend Developer', image: Project1, name: 'MNHS Learning Management System', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vero earum repellendus obcaecati hic ex amet incidunt tenetur illum temporibus.' },
 ];
 
 export const socials = [

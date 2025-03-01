@@ -9,10 +9,9 @@ const Home = () => {
 
   return (
     <main className="">
-      <div className="h-screen flex justify-center items-center">
+      <section className="">
         <HomeHero />
-        <h1>Hero</h1>
-      </div>
+      </section>
 
       <section>
         <HomeService />

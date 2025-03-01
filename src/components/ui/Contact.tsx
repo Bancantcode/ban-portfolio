@@ -53,7 +53,7 @@ const Contact = () => {
     }, []);
 
     return (
-        <div className="section-x-padding pt-xl md:pt-3xl pb-xl md:pb-3xl grid grid-cols-4 md:grid-cols-10 xl:grid-cols-12 gap-x-xs">
+        <div className="section-x-padding pt-28 md:pt-52 pb-xl md:pb-3xl grid grid-cols-4 md:grid-cols-10 xl:grid-cols-12 gap-x-xs">
             <div className="col-span-4 md:col-span-5 xl:col-span-6">
                 <TextReveal text="Get in Touch" className="heading font-medium leading-none mb-xs" marginRight="mr-1.5" />  
             </div>
