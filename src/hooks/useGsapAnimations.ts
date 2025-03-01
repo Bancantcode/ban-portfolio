@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const useGsapAnimations = () => {
   useEffect(() => {
-    //check if the screen width is greater than 768px (considered as mobile size)
+    // check if the screen width is greater than 768px (considered as mobile size)
     // const isMobile = window.innerWidth <= 768;
 
     // if (isMobile) {
@@ -143,10 +143,39 @@ const useGsapAnimations = () => {
         },
       }
     );
-    
-    
 
-    
+    // PROJECT ANIMATION
+    const mm = gsap.matchMedia();
+
+    mm.add("(min-width: 1280px)", () => {
+      gsap.to('#movedown__animation',
+        {
+          y: "70%",
+          ease: "none",
+          scrollTrigger: {
+            trigger: '#movedown__animation',
+            start: "75% 85%",
+            end: "top 50%",
+            scrub: 6,
+          },
+        }
+      );
+
+      gsap.to('#moveup__animation',
+        {
+          y: "-50%",
+          ease: "none",
+          scrollTrigger: {
+            trigger: '#moveup__animation',
+            start: "-15% 85%",
+            end: "top 50%",
+            scrub: 6,
+          },
+        }
+      );
+    });
+
+
   }, []);
 }
 

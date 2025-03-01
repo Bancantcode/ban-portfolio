@@ -103,13 +103,13 @@
     @apply text-heading-2 lg:text-heading-1;
   }
   .text-style {
-    @apply text-base-small opacity-60 md:text-base leading-tight;
+    @apply text-base-small opacity-75 md:text-base leading-tight;
   }
   .grid-style2 {
     @apply grid grid-cols-4 md:grid-cols-10 xl:grid-cols-12 gap-x-xs;
   }
   .grid-style-project {
-    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-xs;
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-md;
   }
   
   .gradient {
