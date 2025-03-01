@@ -105,6 +105,9 @@
   .text-style {
     @apply text-base-small opacity-60 md:text-base leading-tight;
   }
+  .grid-style2 {
+    @apply grid grid-cols-4 md:grid-cols-10 xl:grid-cols-12 gap-x-xs;
+  }
   
   .gradient {
     background-image: linear-gradient(-125deg, #d6a3e400, var(--dark-violet));

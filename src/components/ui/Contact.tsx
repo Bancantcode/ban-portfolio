@@ -55,19 +55,11 @@ const Contact = () => {
     return (
         <div className="section-x-padding pt-xl md:pt-3xl pb-xl md:pb-3xl grid grid-cols-4 md:grid-cols-10 xl:grid-cols-12 gap-x-xs">
             <div className="col-span-4 md:col-span-5 xl:col-span-6">
-                <TextReveal 
-                    text="Get in Touch" 
-                    className="heading font-medium leading-none mb-xs" 
-                    marginRight="mr-1.5" 
-                />  
+                <TextReveal text="Get in Touch" className="heading font-medium leading-none mb-xs" marginRight="mr-1.5" />  
             </div>
 
             <div className="col-span-4 md:col-start-6 md:col-span-5 xl:col-start-7 xl:col-span-6">
-                <TextReveal 
-                    text="I am ready to help! Whether you need a website for your project, want to improve an existing one, or just have a question, feel free to reach out. I'm always open to new opportunities and collaborations!" 
-                    className="text-style xl:w-4/5" 
-                    marginRight="mr-1" 
-                />
+                <TextReveal text="I am ready to help! Whether you need a website for your project, want to improve an existing one, or just have a question, feel free to reach out. I'm always open to new opportunities and collaborations!" className="text-style xl:w-4/5" marginRight="mr-1" />
             </div>
 
             <div className="col-span-4 md:col-start-6 md:col-span-5 xl:col-start-7 xl:col-span-6">
@@ -76,7 +68,7 @@ const Contact = () => {
                     {/* project details part */}
                     <TextReveal 
                         text="Project Details" 
-                        className="text-heading-4 font-medium leading-none mb-xs border-b"
+                        className="text-heading-4 font-medium leading-none mb-xs border-b-2"
                         marginRight="mr-1.5" 
                     />
                     
@@ -147,7 +139,7 @@ const Contact = () => {
                     {/* your details part */}
                     <TextReveal 
                         text="Your Details" 
-                        className="text-heading-4 font-medium leading-none mb-xs border-b"
+                        className="text-heading-4 font-medium leading-none mb-xs border-b-2"
                         marginRight="mr-1.5" 
                     />
 
