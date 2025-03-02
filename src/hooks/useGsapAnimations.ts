@@ -2,6 +2,7 @@
 import { useEffect } from "react"
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
+import { servicesInfo } from "@/constants/constants"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -174,6 +175,44 @@ const useGsapAnimations = () => {
         }
       );
     });
+
+    servicesInfo.forEach((_, serviceIndex) => {
+      const items = document.querySelectorAll(`.service-${serviceIndex} .offer-item`);
+      
+      items.forEach((item) => {
+          gsap.fromTo(item,
+              { width: "0%" },
+              {
+                  width: "100%",
+                  duration: 0.8,
+                  ease: "power2.out",
+                  scrollTrigger: {
+                      trigger: item,
+                      start: "top bottom-=100",
+                      toggleActions: "play none none reverse"
+                  }
+              }
+          );
+      });
+
+      const container = document.querySelector(`.service-${serviceIndex} .container-border`);
+      if (container) {
+          gsap.fromTo(container, { width: "0%" },
+              {
+                  width: "100%",
+                  duration: 1.2,
+                  ease: "power2.out",
+                  scrollTrigger: {
+                      trigger: container,
+                      start: "top bottom-=50",
+                      toggleActions: "play none none reverse"
+                  }
+              }
+          );
+      }
+  });
+
+    
 
 
   }, []);
