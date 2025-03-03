@@ -38,7 +38,7 @@ const WhoAmI = () => {
         <div className="section-x-padding pt-xl md:pt-3xl pb-xl md:pb-3xl">
             <Image src={Glow3} alt="Glow3" className="absolute right-0 top-[80vh]" id="glow__animation3" />
             <Image src={Grid1} alt='Grid Image' className='absolute -left-40 top-[105vh]'/>
-            <TextReveal text="My Journey" className="text-heading-1 lg:text-heading-display leading-none uppercase font-medium mb-lg" marginRight="mr-0" />
+            <TextReveal text="My Journey" className="text-heading-1 lg:text-heading-display xl:text-heading-display-large leading-none uppercase font-medium mb-lg" marginRight="mr-0" />
             {
                 moreAboutMe.map((me, index) => (
                     <div key={index} className="grid grid-cols-4 md:grid-cols-10 xl:grid-cols-12 gap-x-xs mb-lg">

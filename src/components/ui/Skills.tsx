@@ -11,7 +11,7 @@ const Skills = () => {
   return (
     <div className='flex flex-col justify-center items-center w-full gap-3xs py-xl md:py-3xl overflow-hidden'>
       <Image src={Grid1} alt='Grid Image' className='absolute right-200 top-[220vh]'/>
-      <TextReveal text="Expertise" className="text-heading-2 md:text-heading-1 lg:text-heading-display leading-none uppercase font-medium mb-xs" marginRight="mr-0" />
+      <TextReveal text="Expertise" className="text-heading-2 md:text-heading-1 lg:text-heading-display xl:text-heading-display-large leading-none uppercase font-medium mb-xs" marginRight="mr-0" />
 
       <div className='flex flex-wrap justify-center gap-2 z-10 md:w-4/5 xl:w-3/5' id="skills__animation">
         {expertise.map((exp, index) => (

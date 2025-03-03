@@ -135,6 +135,75 @@ export const projectInfo = [
     { role: 'Frontend Developer', image: Project1, name: 'MNHS Learning Management System', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vero earum repellendus obcaecati hic ex amet incidunt tenetur illum temporibus.' },
 ];
 
+export const allProjects = [
+    { 
+        name: 'Satori Specialty Coffee', 
+        href: "https://satori-nextjs.vercel.app/", 
+        repository: "https://github.com/Bancantcode/satori-nextjs", 
+        description: "" 
+    },
+    { 
+        name: 'Akaru', 
+        href: "http://www.akaru.rf.gd/", 
+        repository: "https://github.com/Bancantcode/Akaru", 
+        description: "" 
+    },
+    { 
+        name: 'Unite', 
+        href: "https://unitewebdev.netlify.app/", 
+        repository: "https://github.com/Bancantcode/unite-angular", 
+        description: "" 
+    },
+    { 
+        name: 'Crown Residence', 
+        href: "", 
+        repository: "https://github.com/Bancantcode/crown-residence-mern", 
+        description: "" 
+    },
+    { 
+        name: 'MNHS Learning Management System', 
+        href: "https://mnhs-lms.onrender.com/", 
+        repository: "https://github.com/Bancantcode/mnhs-lms-mern", 
+        description: "" 
+    },
+    { 
+        name: 'Casa Soliman', 
+        href: "", 
+        repository: "https://github.com/Bancantcode/casa-soliman-nextjs", 
+        description: "" 
+    },
+    { 
+        name: 'Studio Form', 
+        href: "", 
+        repository: "https://github.com/Bancantcode/studio-form-nextjs", 
+        description: "" 
+    },
+    { 
+        name: 'Diaserv', 
+        href: "https://diaserv.net/", 
+        repository: "", 
+        description: "" 
+    },
+    { 
+        name: 'ADS-HAUSC', 
+        href: "", 
+        repository: "", 
+        description: "" 
+    },
+    { 
+        name: 'Code Vanta', 
+        href: "", 
+        repository: "", 
+        description: "" 
+    },
+    { 
+        name: 'Satori PHP', 
+        href: "", 
+        repository: "https://github.com/Bancantcode/crud-website-php", 
+        description: "" 
+    },
+]
+
 export const socials = [
     { name: 'BEHANCE', link: 'https://www.behance.net/bancantcodee', svg: '' },
     { name: 'INSTAGRAM', link: 'https://www.instagram.com/ban.cantcode/', svg: '' },
