@@ -19,7 +19,7 @@ const HomeSelectedWork = () => {
                     </a>
                 </div>
             </div>
-
+            
             <ProjectGrid />
         </div>
     )

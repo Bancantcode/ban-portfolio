@@ -2,7 +2,7 @@
 // import useLenisScroll from "@/hooks/useLenisScroll";
 import HomeHero from "@/components/ui/HomeHero";
 // import HomeService from "@/components/ui/HomeService";
-import HomeSelectedWork from "@/components/ui/HomeSelectedWork";
+// import HomeSelectedWork from "@/components/ui/HomeSelectedWork";
 
 const Home = () => {
   // useLenisScroll();
@@ -18,7 +18,7 @@ const Home = () => {
       </section>
 
       <section>
-        <HomeSelectedWork />
+        {/* <HomeSelectedWork /> */}
       </section>
 
       <section className="h-screen flex justify-center items-center">
