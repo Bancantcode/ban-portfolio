@@ -21,7 +21,7 @@ const AboutPage = () => {
         />
         {/* <Stats /> */}
       </section>
-{/* 
+      {/* 
       <section>
         <WhoAmI />
       </section>

@@ -138,69 +138,80 @@ export const projectInfo = [
 export const allProjects = [
     { 
         name: 'Satori Specialty Coffee', 
+        image: Project1,
         href: "https://satori-nextjs.vercel.app/", 
         repository: "https://github.com/Bancantcode/satori-nextjs", 
-        description: "" 
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
     },
     { 
         name: 'Akaru', 
+        image: Project1,
         href: "http://www.akaru.rf.gd/", 
         repository: "https://github.com/Bancantcode/Akaru", 
-        description: "" 
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
     },
     { 
         name: 'Unite', 
         href: "https://unitewebdev.netlify.app/", 
+        image: Project1,
         repository: "https://github.com/Bancantcode/unite-angular", 
-        description: "" 
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
     },
     { 
         name: 'Crown Residence', 
+        image: Project1,
         href: "", 
         repository: "https://github.com/Bancantcode/crown-residence-mern", 
-        description: "" 
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
     },
     { 
         name: 'MNHS Learning Management System', 
+        image: Project1,
         href: "https://mnhs-lms.onrender.com/", 
         repository: "https://github.com/Bancantcode/mnhs-lms-mern", 
-        description: "" 
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
     },
     { 
         name: 'Casa Soliman', 
+        image: Project1,
         href: "", 
         repository: "https://github.com/Bancantcode/casa-soliman-nextjs", 
-        description: "" 
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
     },
     { 
         name: 'Studio Form', 
+        image: Project1,
         href: "", 
         repository: "https://github.com/Bancantcode/studio-form-nextjs", 
-        description: "" 
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
     },
     { 
         name: 'Diaserv', 
+        image: Project1,
         href: "https://diaserv.net/", 
         repository: "", 
-        description: "" 
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
     },
     { 
         name: 'ADS-HAUSC', 
+        image: Project1,
         href: "", 
         repository: "", 
-        description: "" 
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
     },
     { 
         name: 'Code Vanta', 
+        image: Project1,
         href: "", 
         repository: "", 
-        description: "" 
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
     },
     { 
         name: 'Satori PHP', 
+        image: Project1,
         href: "", 
         repository: "https://github.com/Bancantcode/crud-website-php", 
-        description: "" 
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
     },
 ]
 

@@ -27,7 +27,11 @@ const Contact = () => {
             entries.forEach((entry) => {
                 const line = entry.target.nextElementSibling;
                 if (entry.isIntersecting) {
-                    gsap.to(line, { width: "100%", duration: 0.4, ease: "power2.out" });
+                    gsap.to(line, { 
+                        width: "100%", 
+                        duration: 0.4, 
+                        ease: "power2.out" 
+                    });
                 } 
             });
         }, options);
