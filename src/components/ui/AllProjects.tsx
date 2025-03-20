@@ -76,7 +76,7 @@ const AllProjects = () => {
 
         ScrollTrigger.create({
             trigger: cards[0],
-            start: "top 35%",
+            start: "top 30%",
             endTrigger: cards[cards.length - 1],
             end: "top 30%",
             pin: ".intro",
@@ -90,7 +90,7 @@ const AllProjects = () => {
             if(!isLastCard) {
                 ScrollTrigger.create({
                     trigger: card,
-                    start: "top 35%",
+                    start: "top 30%",
                     endTrigger: ".outro",
                     end: "top 65%",
                     pin: true,
@@ -102,7 +102,7 @@ const AllProjects = () => {
                     ease: "none",
                     scrollTrigger: {
                         trigger: card,
-                        start: "top 35%",
+                        start: "top 30%",
                         endTrigger: ".outro",
                         end: "top 65%",
                         scrub: true,
@@ -116,14 +116,15 @@ const AllProjects = () => {
             ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
         }
     }, { scope: container });
+    
     return (
         <div className="app" ref={container}>
             <section className="hero">
                 <Image src="/images/hero.webp" alt="asdas" width={300} height={300} />
             </section>
-            <section className="intro">
+            {/* <section className="intro">
                 <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatibus nam laboriosam quisquam assumenda voluptates!</h1>
-            </section>
+            </section> */}
             <section className="cards">
                 {cards.map((card, index) => (
                     <Card key={index} {...card} index={index} />
@@ -132,6 +133,7 @@ const AllProjects = () => {
             <section className="outro">
                 <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, provident!</h1>
             </section>
+            
         </div>
     )
 }

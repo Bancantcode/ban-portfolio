@@ -63,35 +63,35 @@ p {
 }
 
 #card-1 .card-inner {
-    background-color: red;
+    background-color: var(--semi-dark);
 }
 
 #card-2 .card-inner {
-    background-color: blue;
+    background-color: var(--violet);
 }
 
 #card-3 .card-inner {
-    background-color: violet;
+    background-color: var(--semi-dark); 
 }
 
 #card-4 .card-inner {
-    background-color: green;
+    background-color: var(--violet);
 }
 
 #card-5 .card-inner {
-    background-color: violet;
+    background-color: var(--semi-dark);
 }
 
 #card-6 .card-inner {
-    background-color: green;
+    background-color: var(--violet);
 }
 
 #card-7 .card-inner {
-    background-color: violet;
+    background-color: var(--semi-dark);
 }
 
 #card-8 .card-inner {
-    background-color: green;
+    background-color: var(--violet);
 }
 
 
