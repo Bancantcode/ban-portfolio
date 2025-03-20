@@ -67,19 +67,19 @@ p {
 }
 
 #card-2 .card-inner {
-    background-color: var(--violet);
+    background-color: var(--dark-violet); 
 }
 
 #card-3 .card-inner {
-    background-color: var(--semi-dark); 
-}
-
-#card-4 .card-inner {
     background-color: var(--violet);
 }
 
-#card-5 .card-inner {
+#card-4 .card-inner {
     background-color: var(--semi-dark);
+}
+
+#card-5 .card-inner {
+    background-color: var(--dark-violet); 
 }
 
 #card-6 .card-inner {
@@ -91,7 +91,19 @@ p {
 }
 
 #card-8 .card-inner {
+    background-color: var(--dark-violet); 
+}
+
+#card-9 .card-inner {
     background-color: var(--violet);
+}
+
+#card-10 .card-inner {
+    background-color: var(--semi-dark);
+}
+
+#card-11 .card-inner {
+    background-color: var(--dark-violet); 
 }
 
 

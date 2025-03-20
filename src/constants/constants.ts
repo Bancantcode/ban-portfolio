@@ -137,83 +137,83 @@ export const projectInfo = [
     { role: 'Frontend Developer Lead', image: Project1, name: 'ADS-HAUSC', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vero earum repellendus obcaecati hic ex amet incidunt tenetur illum temporibus.' },
 ];
 
-export const allProjects = [
+export const cards = [
     { 
-        name: 'Satori Specialty Coffee', 
+        title: 'Satori Specialty Coffee', 
         image: Project1,
         href: "https://satori-nextjs.vercel.app/", 
         repository: "https://github.com/Bancantcode/satori-nextjs", 
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
+        copy: "Satori is a specialty coffee space designed to inspire creativity, foster connections, and celebrate the love of coffee in every cup. It offers a warm and inviting atmosphere where coffee enthusiasts can gather, share experiences, and enjoy expertly crafted brews made with passion and precision." 
     },
     { 
-        name: 'ADS-HAUSC', 
-        image: Project1,
-        href: "https://adshausc.netlify.app/", 
-        repository: "", 
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
-    },
-    { 
-        name: 'Akaru', 
-        image: Project1,
-        href: "http://www.akaru.rf.gd/", 
-        repository: "https://github.com/Bancantcode/Akaru", 
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
-    },
-    { 
-        name: 'Unite', 
-        href: "https://unitewebdev.netlify.app/", 
-        image: Project1,
-        repository: "https://github.com/Bancantcode/unite-angular", 
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
-    },
-    { 
-        name: 'Crown Residence', 
+        title: 'Crown Residence', 
         image: Project1,
         href: "", 
         repository: "https://github.com/Bancantcode/crown-residence-mern", 
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
+        copy: "Crown Residence is a property reservation website inspired by Airbnb. It allows users to browse, book, and manage property reservations seamlessly with a user-friendly interface and secure booking system." 
     },
     { 
-        name: 'MNHS Learning Management System', 
+        title: 'ADS-HAUSC', 
         image: Project1,
-        href: "https://mnhs-lms.onrender.com/", 
-        repository: "https://github.com/Bancantcode/mnhs-lms-mern", 
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
+        href: "https://adshausc.netlify.app/", 
+        repository: "", 
+        copy: "IskoLink is an online platform for the Association of DOST Scholars - Holy Angel University Student Chapter (ADS-HAUSC), built to strengthen connections among scholars and create a lasting impact on the community." 
     },
     { 
-        name: 'Casa Soliman', 
+        title: 'Casa Soliman', 
         image: Project1,
         href: "", 
         repository: "https://github.com/Bancantcode/casa-soliman-nextjs", 
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
+        copy: "ONGOING PROJECT..." 
     },
     { 
-        name: 'Studio Form', 
+        title: 'Studio Form', 
         image: Project1,
         href: "", 
         repository: "https://github.com/Bancantcode/studio-form-nextjs", 
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
+        copy: "ONGOING PROJECT..." 
     },
     { 
-        name: 'Diaserv', 
+        title: 'MNHS LMS', 
+        image: Project1,
+        href: "https://mnhs-lms.onrender.com/", 
+        repository: "https://github.com/Bancantcode/mnhs-lms-mern", 
+        copy: "Malino National High School Learning Management System is a web application designed to simplify educational management. Developed for Grade 11 students at Malino National High School as part of their thesis, this system enhances accessibility and streamlines learning processes." 
+    },
+    { 
+        title: 'Code Vanta', 
+        image: Project1,
+        href: "", 
+        repository: "", 
+        copy: "ONGOING PROJECT..." 
+    },
+    { 
+        title: 'Diaserv', 
         image: Project1,
         href: "https://diaserv.net/", 
         repository: "", 
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
+        copy: "Diaserv Diagnostic Laboratory is a healthcare in San Fernando, Pampanga offering a high-quality diagnostic services that empower patients and healthcare providers with accurate and timely results." 
     },
     { 
-        name: 'Code Vanta', 
+        title: 'Akaru', 
         image: Project1,
-        href: "", 
-        repository: "", 
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
+        href: "http://www.akaru.rf.gd/", 
+        repository: "https://github.com/Bancantcode/Akaru", 
+        copy: "Akaru is a digital library that allows readers to read in a way that is engaging, and that is easy and fun. Akaru aims to bridge a gap between the reading experience and ease of use." 
     },
     { 
-        name: 'Satori PHP', 
+        title: 'Unite', 
+        href: "https://unitewebdev.netlify.app/", 
+        image: Project1,
+        repository: "https://github.com/Bancantcode/unite-angular", 
+        copy: "UNITE is a web development company website we created to demonstrate our proficiency in using the Angular framework, especially on the Angular Directives and Routing." 
+    },
+    { 
+        title: 'Satori PHP', 
         image: Project1,
         href: "", 
         repository: "https://github.com/Bancantcode/crud-website-php", 
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
+        copy: "This marks as the beginning of my journey in web development. Created as our final project in Dynamic Web Programming, showcasing our skills in building dynamic and interactive web application." 
     },
 ]
 
