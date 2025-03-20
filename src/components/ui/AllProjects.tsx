@@ -16,8 +16,6 @@ const Card = ({ title, copy, image, index }) => {
         <div className="card" id={`card-${index + 1}`}>
             <div className="card-inner">
                 <div className="card-content">
-                    {/* <h1>{title}</h1> */}
-                    {/* <p>{copy}</p> */}
                     <TextReveal text={title} className="mb-xl heading leading-none" marginRight="mr-1.5" />
                     <TextReveal text={copy} className="mb-lg text-style xl:w-4/5" marginRight="mr-1" />
                 </div>

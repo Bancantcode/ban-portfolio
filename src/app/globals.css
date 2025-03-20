@@ -119,6 +119,50 @@
   .line {
     background-image: linear-gradient(-125deg, #d6a3e400, var(--violet));
   }
+
+  #card-1 .card-inner {
+    background-color: var(--semi-dark);
+  }
+
+  #card-2 .card-inner {
+      background-color: var(--dark-violet); 
+  }
+
+  #card-3 .card-inner {
+      background-color: var(--violet);
+  }
+
+  #card-4 .card-inner {
+      background-color: var(--semi-dark);
+  }
+
+  #card-5 .card-inner {
+      background-color: var(--dark-violet); 
+  }
+
+  #card-6 .card-inner {
+      background-color: var(--violet);
+  }
+
+  #card-7 .card-inner {
+      background-color: var(--semi-dark);
+  }
+
+  #card-8 .card-inner {
+      background-color: var(--dark-violet); 
+  }
+
+  #card-9 .card-inner {
+      background-color: var(--violet);
+  }
+
+  #card-10 .card-inner {
+      background-color: var(--semi-dark);
+  }
+
+  #card-11 .card-inner {
+      background-color: var(--dark-violet); 
+  }
 }
 
 
