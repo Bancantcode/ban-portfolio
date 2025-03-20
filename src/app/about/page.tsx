@@ -28,11 +28,11 @@ const AboutPage = () => {
 
       <section>
         <Skills />
-      </section>
+      </section> */}
 
       <section>
-        <Certificates />
-      </section> */}
+        {/* <Certificates /> */}
+      </section>
     </main>
   )
 }

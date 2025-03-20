@@ -21,6 +21,8 @@ import Certificate13 from '../../public/images/e-certificates/SoloLearn_Santiago
 import Certificate14 from '../../public/images/e-certificates/SoloLearn_SantiagoBryan_JavascriptIntermediate.webp'
 import Certificate15 from '../../public/images/e-certificates/SoloLearn_SantiagoBryan_WebDevelopment.webp'
 import Certificate16 from '../../public/images/e-certificates/TheCompleteFullStack_WebDevelopmentBootcamp2024.webp'
+import Certificate17 from '../../public/images/e-certificates/IntroductionToNotionAPI.webp'
+import Certificate18 from '../../public/images/e-certificates/3rdRegionalCybersecurityConference.webp'
 
 // skills
 import HTML from '../../public/images/logos/html.svg'
@@ -132,7 +134,7 @@ export const projectInfo = [
     { role: 'Project Lead & Frontend Lead', image: Project1, name: 'Akaru', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vero earum repellendus obcaecati hic ex amet incidunt tenetur illum temporibus.' },
     { role: 'Frontend Developer', image: Project1, name: 'Unite', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vero earum repellendus obcaecati hic ex amet incidunt tenetur illum temporibus.' },
     { role: 'Project Lead & Frontend Lead', image: Project1, name: 'Crown Residence', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vero earum repellendus obcaecati hic ex amet incidunt tenetur illum temporibus.' },
-    { role: 'Frontend Developer', image: Project1, name: 'MNHS Learning Management System', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vero earum repellendus obcaecati hic ex amet incidunt tenetur illum temporibus.' },
+    { role: 'Frontend Developer Lead', image: Project1, name: 'ADS-HAUSC', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vero earum repellendus obcaecati hic ex amet incidunt tenetur illum temporibus.' },
 ];
 
 export const allProjects = [
@@ -141,6 +143,13 @@ export const allProjects = [
         image: Project1,
         href: "https://satori-nextjs.vercel.app/", 
         repository: "https://github.com/Bancantcode/satori-nextjs", 
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
+    },
+    { 
+        name: 'ADS-HAUSC', 
+        image: Project1,
+        href: "https://adshausc.netlify.app/", 
+        repository: "", 
         description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
     },
     { 
@@ -189,13 +198,6 @@ export const allProjects = [
         name: 'Diaserv', 
         image: Project1,
         href: "https://diaserv.net/", 
-        repository: "", 
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
-    },
-    { 
-        name: 'ADS-HAUSC', 
-        image: Project1,
-        href: "", 
         repository: "", 
         description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." 
     },
@@ -306,9 +308,9 @@ export const certificates = [
                 alt: 'Hubspot SEO 2 Certificate' 
             },
             { 
-                title: 'Legacy Javascript Algorithms and Data Structure', 
-                src: Certificate8, 
-                alt: 'Legacy Javascript Algorithms and Data Structure Certificate' 
+                title: 'Regional Cybersecurity Conference', 
+                src: Certificate18, 
+                alt: 'Regional Cybersecurity Conferenc Certificate' 
             },
             { 
                 title: 'Get Started With Figma', 
@@ -339,6 +341,7 @@ export const certificates = [
             { title: 'SoloLearn Intro to HTML', src: Certificate11, alt: 'SoloLearn Intro to HTML Certificate' },
             { title: 'The Complete Full Stack Web Development 2024', src: Certificate16, alt: 'The Complete Full Stack Web Development 2024 Certificate' },
             { title: 'SoloLearn Intro to CSS', src: Certificate12, alt: 'SoloLearn Intro to CSS Certificate' },
+            { title: 'Introduction to Notion API', src: Certificate17, alt: 'Introduction to Notion API Certificate' },
             { title: 'Hubspot SEO 1', src: Certificate5, alt: 'Hubspot SEO 1 Certificate' },
             { title: 'SoloLearn Intro to Javascript', src: Certificate13, alt: 'SoloLearn Intro to Javascript Certificate' },
             { title: 'Legacy Javascript Algorithms and Data Structure', src: Certificate8, alt: 'Legacy Javascript Algorithms and Data Structure Certificate' },
