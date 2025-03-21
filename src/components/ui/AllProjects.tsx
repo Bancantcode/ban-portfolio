@@ -3,42 +3,40 @@ import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Image from 'next/image';
 import './allprojects.css'
 import { cards } from '@/constants/constants';
 import TextReveal from './TextReveal';
+import Button from './Button';
+import Link from 'next/link';
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-const Card = ({ title, copy, image, roles, index }) => {
+const Card = ({ title, copy, roles, video, href, repository, index }) => {
     return (
         <div className="card relative" id={`card-${index + 1}`}>
-            <div className="card-inner relative will-change-transform w-full h-full flex gap-sm section-x-padding py-lg xl:py-xl">
+            <div className="card-inner relative will-change-transform w-full h-full flex gap-sm section-x-padding py-lg">
                 <div className="card-content flex-[2] flex flex-col justify-between">
                     <div>
                         <TextReveal text={title} className="heading leading-none mb-sm lg:mb-xs" marginRight="mr-1.5" />
-                        <TextReveal text={copy} className="text-style md:w-4/5 xl:w-3/5 2xl:w-1/2" marginRight="mr-1" />
+                        <TextReveal text={copy} className="mb-lg text-style md:w-4/5 xl:w-3/5" marginRight="mr-1" />
+                        <TextReveal text={Object.values(roles).join(', ')} className="text-heading-4" marginRight="mr-1" />
                     </div>
-                    <TextReveal text={Object.values(roles).join(', ')} className="text-style" marginRight="mr-1" />
+                    <div className='flex gap-md'>
+                        <Link href={repository} target="_blank" className="">
+                            <Button id="nav-btn" title="View Repository" containerClass="" />
+                        </Link>
+                        <Link href={href} target="_blank" className="">
+                            <Button id="nav-btn" title="View Site" containerClass="" />
+                        </Link>
+                    </div>
                 </div>
-                <div className="card-img flex-1 aspect-video overflow-hidden">
-                    {/* <Image
-                        src={image}
-                        alt={title}
-                        width={300}
-                        height={300} 
-                        className="rounded-lg h-full"
-                    /> */}
-                    <video width="320" height="240" preload="none" autoPlay loop muted>
-                        <source src="/videos/video.mp4" type="video/mp4" />
-                            <track
-                                src="/videos/video.mp4"
-                                kind="subtitles"
-                                srcLang="en"
-                                label="English"
-                            />
-                        Your browser does not support the video tag.
+
+                <div className="card-img flex-1 aspect-video">
+                    <video width="320" height="240" preload="none" autoPlay loop muted className="">
+                        <source src={video} type="video/mp4" />
+                            <track src={video} kind="captions" srcLang="en" label="English" default />
+                            Your browser does not support the video tag.
                     </video>
                 </div>
             </div>
@@ -102,7 +100,7 @@ const AllProjects = () => {
             </section>
             <section className="cards">
                 {cards.map((card, index) => (
-                    <Card key={index} {...card} image={card.image} index={index} />
+                    <Card key={index} {...card} index={index} />
                 ))}
             </section>
             <section className="outro">

@@ -138,16 +138,16 @@ export const projectInfo = [
 ];
 
 export const videoPaths = {
-    video1: "/videos/video.mp4",
+    video1: "/videos/satori.mp4",
     video2: "/videos/video.mp4",
-    video3: "/videos/video.mp4",
+    video3: "/videos/adshausc.mp4",
     video4: "/videos/video.mp4",
     video5: "/videos/video.mp4",
-    video6: "/videos/video.mp4",
+    video6: "/videos/mnhs-lms.mp4",
     video7: "/videos/video.mp4",
     video8: "/videos/video.mp4",
     video9: "/videos/video.mp4",
-    video10: "/videos/video.mp4",
+    video10: "/videos/unite.mp4",
     video11: "/videos/video.mp4",
 };
 
