@@ -1,20 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-h1 {
-    font-size: 4rem;
-    font-weight: 600;
-    line-height: 1;
-    margin-bottom: 2.5em;
-}
-
-p {
-    font-size: 1.25rem;
-    font-weight: 500;
-}
 
 .hero, .intro, .outro {
     position: relative;
@@ -36,77 +19,6 @@ p {
 .intro h1, .outro h1 {
     margin-bottom: 0;
 }
-
-.card {
-    position: relative;
-}
-
-.card-inner {
-    position: relative;
-    will-change: transform;
-    width: 100%;
-    height: 100%;
-    padding: 2em;
-    display: flex;
-    gap: 4em;
-}
-
-.card-content {
-    flex: 3;
-}
-
-.card-img {
-    flex: 1;
-    aspect-ratio: 16 / 9;
-    border-radius: 0.75em;
-    overflow: hidden;
-}
-
-/* #card-1 .card-inner {
-    background-color: var(--semi-dark);
-}
-
-#card-2 .card-inner {
-    background-color: var(--dark-violet); 
-}
-
-#card-3 .card-inner {
-    background-color: var(--violet);
-}
-
-#card-4 .card-inner {
-    background-color: var(--semi-dark);
-}
-
-#card-5 .card-inner {
-    background-color: var(--dark-violet); 
-}
-
-#card-6 .card-inner {
-    background-color: var(--violet);
-}
-
-#card-7 .card-inner {
-    background-color: var(--semi-dark);
-}
-
-#card-8 .card-inner {
-    background-color: var(--dark-violet); 
-}
-
-#card-9 .card-inner {
-    background-color: var(--violet);
-}
-
-#card-10 .card-inner {
-    background-color: var(--semi-dark);
-}
-
-#card-11 .card-inner {
-    background-color: var(--dark-violet); 
-} */
-
-
 
 @media (max-width: 900px) {
     h1 {

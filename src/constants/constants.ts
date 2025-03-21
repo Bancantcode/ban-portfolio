@@ -137,80 +137,105 @@ export const projectInfo = [
     { role: 'Frontend Developer Lead', image: Project1, name: 'ADS-HAUSC', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vero earum repellendus obcaecati hic ex amet incidunt tenetur illum temporibus.' },
 ];
 
+export const videoPaths = {
+    video1: "/videos/video.mp4",
+    video2: "/videos/video.mp4",
+    video3: "/videos/video.mp4",
+    video4: "/videos/video.mp4",
+    video5: "/videos/video.mp4",
+    video6: "/videos/video.mp4",
+    video7: "/videos/video.mp4",
+    video8: "/videos/video.mp4",
+    video9: "/videos/video.mp4",
+    video10: "/videos/video.mp4",
+    video11: "/videos/video.mp4",
+};
+
 export const cards = [
     { 
         title: 'Satori Specialty Coffee', 
-        image: Project1,
+        video: videoPaths.video1,
+        roles: { role: 'Independent Developer' },      
         href: "https://satori-nextjs.vercel.app/", 
         repository: "https://github.com/Bancantcode/satori-nextjs", 
         copy: "Satori is a specialty coffee space designed to inspire creativity, foster connections, and celebrate the love of coffee in every cup. It offers a warm and inviting atmosphere where coffee enthusiasts can gather, share experiences, and enjoy expertly crafted brews made with passion and precision." 
     },
     { 
         title: 'Crown Residence', 
-        image: Project1,
+        video: videoPaths.video2,
+        roles: { role0: 'Project Lead', role1: 'Frontend Lead', role2: 'UI/UX Designer' }, 
         href: "", 
         repository: "https://github.com/Bancantcode/crown-residence-mern", 
         copy: "Crown Residence is a property reservation website inspired by Airbnb. It allows users to browse, book, and manage property reservations seamlessly with a user-friendly interface and secure booking system." 
     },
     { 
         title: 'ADS-HAUSC', 
-        image: Project1,
+        video: videoPaths.video3,
+        roles: { role0: 'Frontend Lead', role1: 'Backend Developer', role2: 'UI/UX Designer' },  
         href: "https://adshausc.netlify.app/", 
         repository: "", 
         copy: "IskoLink is an online platform for the Association of DOST Scholars - Holy Angel University Student Chapter (ADS-HAUSC), built to strengthen connections among scholars and create a lasting impact on the community." 
     },
     { 
         title: 'Casa Soliman', 
-        image: Project1,
+        video: videoPaths.video4,
+        roles: { role0: 'ONGOING PROJECT...' },     
         href: "", 
         repository: "https://github.com/Bancantcode/casa-soliman-nextjs", 
         copy: "ONGOING PROJECT..." 
     },
     { 
         title: 'Studio Form', 
-        image: Project1,
+        video: videoPaths.video5,
+        roles: { role0: 'ONGOING PROJECT...' },    
         href: "", 
         repository: "https://github.com/Bancantcode/studio-form-nextjs", 
         copy: "ONGOING PROJECT..." 
     },
     { 
         title: 'MNHS LMS', 
-        image: Project1,
+        video: videoPaths.video6,
+        roles: { role0: 'Frontend Developer', role1: 'UI/UX Designer' },    
         href: "https://mnhs-lms.onrender.com/", 
         repository: "https://github.com/Bancantcode/mnhs-lms-mern", 
         copy: "Malino National High School Learning Management System is a web application designed to simplify educational management. Developed for Grade 11 students at Malino National High School as part of their thesis, this system enhances accessibility and streamlines learning processes." 
     },
     { 
         title: 'Code Vanta', 
-        image: Project1,
+        video: videoPaths.video7,
+        roles: { role0: 'ONGOING PROJECT...', },     
         href: "", 
         repository: "", 
         copy: "ONGOING PROJECT..." 
     },
     { 
         title: 'Diaserv', 
-        image: Project1,
+        video: videoPaths.video8,
+        roles: { role0: 'Wordpress Developer' },     
         href: "https://diaserv.net/", 
         repository: "", 
         copy: "Diaserv Diagnostic Laboratory is a healthcare in San Fernando, Pampanga offering a high-quality diagnostic services that empower patients and healthcare providers with accurate and timely results." 
     },
     { 
         title: 'Akaru', 
-        image: Project1,
+        video: videoPaths.video9,
+        roles: { role0: 'Frontend Lead', role1: 'UI/UX Designer' },     
         href: "http://www.akaru.rf.gd/", 
         repository: "https://github.com/Bancantcode/Akaru", 
         copy: "Akaru is a digital library that allows readers to read in a way that is engaging, and that is easy and fun. Akaru aims to bridge a gap between the reading experience and ease of use." 
     },
     { 
         title: 'Unite', 
+        video: videoPaths.video10,
+        roles: { role0: 'Frontend Developer', role1: 'UI/UX Designer' },     
         href: "https://unitewebdev.netlify.app/", 
-        image: Project1,
         repository: "https://github.com/Bancantcode/unite-angular", 
         copy: "UNITE is a web development company website we created to demonstrate our proficiency in using the Angular framework, especially on the Angular Directives and Routing." 
     },
     { 
         title: 'Satori PHP', 
-        image: Project1,
+        video: videoPaths.video11,
+        roles: { role0: 'Frontend Lead', role1: 'UI/UX Designer' },    
         href: "", 
         repository: "https://github.com/Bancantcode/crud-website-php", 
         copy: "This marks as the beginning of my journey in web development. Created as our final project in Dynamic Web Programming, showcasing our skills in building dynamic and interactive web application." 
