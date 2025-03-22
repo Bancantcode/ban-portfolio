@@ -6,10 +6,6 @@
     padding: 2em;
 }
 
-.hero {
-    padding: 0;
-}
-
 .intro, .outro {
     background-color: #fff;
     display: flex;
@@ -27,10 +23,6 @@
 
     .card-img, .card-content p {
         display: none;
-    }
-
-    .card {
-        height: 300px;
     }
 }
 

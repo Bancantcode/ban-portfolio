@@ -12,27 +12,43 @@ import Link from 'next/link';
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-const Card = ({ title, copy, roles, video, href, repository, index }) => {
+interface CardProps {
+    title: string;
+    copy: string;
+    roles: string[];
+    video: string;
+    href: string;
+    repository: string;
+    index: number;
+}
+
+const Card: React.FC<CardProps> = ({ title, copy, roles, video, href, repository, index }) => {
     return (
         <div className="card relative" id={`card-${index + 1}`}>
-            <div className="card-inner relative will-change-transform w-full h-full flex gap-sm section-x-padding py-lg">
-                <div className="card-content flex-[2] flex flex-col justify-between">
+            <div className="card-inner relative will-change-transform w-full h-full flex gap-sm section-x-padding py-lg lg:py-xl">
+                <div className="card-content flex-1 flex flex-col justify-between">
                     <div>
-                        <TextReveal text={title} className="heading leading-none mb-sm lg:mb-xs" marginRight="mr-1.5" />
+                        <TextReveal text={title} className="text-heading-2 xl:text-heading-1 leading-none mb-sm lg:mb-xs" marginRight="mr-1.5" />
                         <TextReveal text={copy} className="mb-lg text-style md:w-4/5 xl:w-3/5" marginRight="mr-1" />
-                        <TextReveal text={Object.values(roles).join(', ')} className="text-heading-4" marginRight="mr-1" />
+                        <div className="text-heading-4 hidden md:flex gap-2 flex-wrap">
+                            {Object.values(roles).map((role, index) => (
+                            <span  key={index}  className="border border-light-violet rounded-md px-2 py-1 text-sm text-light-violet">
+                                {role}
+                            </span>
+                            ))}
+                        </div>
                     </div>
-                    <div className='flex gap-md'>
+                    <div className='flex gap-3xs'>
                         <Link href={repository} target="_blank" className="">
-                            <Button id="nav-btn" title="View Repository" containerClass="" />
+                            <Button id="nav-btn" title="View Repository" containerClass="border border-light-violet rounded-md px-md py-3xs font-medium" />
                         </Link>
                         <Link href={href} target="_blank" className="">
-                            <Button id="nav-btn" title="View Site" containerClass="" />
+                            <Button id="nav-btn" title="View Site" containerClass="border border-light-violet rounded-md px-sm py-3xs font-medium" />
                         </Link>
                     </div>
                 </div>
 
-                <div className="card-img flex-1 aspect-video">
+                <div className="card-img flex-1 aspect-video border-x border-light-violet p-2 rounded-2xl">
                     <video width="320" height="240" preload="none" autoPlay loop muted className="">
                         <source src={video} type="video/mp4" />
                             <track src={video} kind="captions" srcLang="en" label="English" default />
@@ -100,7 +116,7 @@ const AllProjects = () => {
             </section>
             <section className="cards">
                 {cards.map((card, index) => (
-                    <Card key={index} {...card} index={index} />
+                    <Card key={index} {...card} roles={Object.values(card.roles)} index={index} />
                 ))}
             </section>
             <section className="outro">

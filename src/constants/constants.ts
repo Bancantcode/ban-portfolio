@@ -139,16 +139,16 @@ export const projectInfo = [
 
 export const videoPaths = {
     video1: "/videos/satori.mp4",
-    video2: "/videos/video.mp4",
+    video2: "/videos/crown-residence.mp4",
     video3: "/videos/adshausc.mp4",
-    video4: "/videos/video.mp4",
-    video5: "/videos/video.mp4",
+    video4: "/videos/comingsoon.mp4",
+    video5: "/videos/comingsoon.mp4",
     video6: "/videos/mnhs-lms.mp4",
-    video7: "/videos/video.mp4",
-    video8: "/videos/video.mp4",
-    video9: "/videos/video.mp4",
+    video7: "/videos/comingsoon.mp4",
+    video8: "/videos/diaserv.mp4",
+    video9: "/videos/comingsoon.mp4",
     video10: "/videos/unite.mp4",
-    video11: "/videos/video.mp4",
+    video11: "/videos/comingsoon.mp4",
 };
 
 export const cards = [
@@ -371,6 +371,7 @@ export const certificates = [
             { title: 'SoloLearn Intro to Javascript', src: Certificate13, alt: 'SoloLearn Intro to Javascript Certificate' },
             { title: 'Legacy Javascript Algorithms and Data Structure', src: Certificate8, alt: 'Legacy Javascript Algorithms and Data Structure Certificate' },
             { title: 'SoloLearn Web Development', src: Certificate15, alt: 'SoloLearn Web Development Certificate' },
+            { title: 'Legacy Javascript Algorithms and Data Structure', src: Certificate8, alt: 'Legacy Javascript Algorithms and Data Structure Certificate' },
         ]
     },
 ]
