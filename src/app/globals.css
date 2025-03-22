@@ -97,7 +97,7 @@
     @apply grid grid-cols-4 gap-x-xs md:grid-cols-9 lg:grid-cols-12 w-full;
   }
   .section-x-padding {
-    @apply px-[var(--space-xs)] md:px-[var(--space-md)];
+    @apply px-[var(--space-xs)] md:px-[var(--space-lg)];
   }
   .heading {
     @apply text-heading-2 lg:text-heading-1;
@@ -164,6 +164,7 @@
     background-color: var(--dark-violet); 
   }
 }
+
 
 
 
