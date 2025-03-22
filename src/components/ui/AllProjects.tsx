@@ -12,7 +12,17 @@ import Link from 'next/link';
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-const Card = ({ title, copy, roles, video, href, repository, index }) => {
+interface CardProps {
+    title: string;
+    copy: string;
+    roles: string[];
+    video: string;
+    href: string;
+    repository: string;
+    index: number;
+}
+
+const Card: React.FC<CardProps> = ({ title, copy, roles, video, href, repository, index }) => {
     return (
         <div className="card relative" id={`card-${index + 1}`}>
             <div className="card-inner relative will-change-transform w-full h-full flex gap-sm section-x-padding py-lg lg:py-xl">
@@ -106,7 +116,7 @@ const AllProjects = () => {
             </section>
             <section className="cards">
                 {cards.map((card, index) => (
-                    <Card key={index} {...card} index={index} />
+                    <Card key={index} {...card} roles={Object.values(card.roles)} index={index} />
                 ))}
             </section>
             <section className="outro">
